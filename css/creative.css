@@ -37,8 +37,14 @@ h6 {
   background-color: rgba(0, 0, 0, 0.3); }
 
 .black-text {
-  color: #333;
-  font-weight: bold; }
+  color: #FFAA98;
+  font-weight: bold;
+  text-decoration: underline; }
+
+.black-text:hover {
+  color: #601500;
+  font-weight: bold;
+  text-decoration: underline; }
 
 .top-buffer {
   margin-top: 16px; }

@@ -1,0 +1,2 @@
+Top/intro screen:
+	-on left has name, 'Software and Web Developer', and tagline. Right has 'What I'm working on' with image(s) and very short description for current projects.

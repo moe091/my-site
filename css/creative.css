@@ -31,7 +31,31 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
 
 .text-medium {
-  font-size: 18px !important; }
+  font-size: 14px; }
+  .text-medium a {
+    color: #FFCCB2;
+    font-style: italic; }
+
+.text-medium.fa-4x {
+  font-size: 4em; }
+
+.light-text {
+  color: #fff; }
+  .light-text .text-muted {
+    color: #dee2e6 !important; }
+
+.text-muted a {
+  color: #FFCCB2;
+  font-style: italic; }
+
+.text-popout {
+  color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  -webkit-box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1); }
 
 .black-tint {
   background-color: rgba(0, 0, 0, 0.3); }
@@ -56,13 +80,15 @@ h6 {
   background-color: #212529 !important; }
 
 .text-faded {
-  color: rgba(255, 255, 255, 0.7); }
+  color: rgba(255, 255, 255, 0.8); }
 
 section {
-  padding: 8rem 0; }
+  padding: 4rem 0; }
 
 .section-heading {
-  margin-top: 0; }
+  margin-top: 0;
+  font-size: 2em;
+  text-align: center; }
 
 ::-moz-selection {
   color: #fff;
@@ -84,6 +110,29 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: #212529; }
+
+.about-me-bullet {
+  color: #e9ecef;
+  display: inline-block;
+  margin: 8px 0;
+  font-weight: normal;
+  width: 90%;
+  text-align: left;
+  font-style: italic;
+  text-indent: 1em; }
+  .about-me-bullet:before {
+    content: "\f101";
+    /* this is your text. You can also use UTF-8 character codes as I do here */
+    font-family: FontAwesome;
+    margin-right: 1em; }
+  .about-me-bullet strong {
+    color: #fff; }
+
+.text-bold {
+  font-weight: bold; }
+
+.top-space {
+  padding-top: 1em; }
 
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
@@ -150,6 +199,7 @@ header.masthead {
   padding-bottom: calc(10rem - 56px);
   background-image: url("../img/header.jpg");
   background-position: center center;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -177,7 +227,30 @@ header.masthead {
       font-size: 4rem; } }
 
 .service-box {
-  max-width: 400px; }
+  max-width: 400px;
+  min-height: 85%; }
+
+#portfolio {
+  padding-top: 26px !important; }
+  #portfolio h1 {
+    text-align: center;
+    margin: 16px 0;
+    font-family: 'Merriweather' !important; }
+  #portfolio p {
+    text-align: center;
+    margin: 26px 0;
+    font-family: 'Merriweather' !important;
+    font-size: 14px;
+    font-style: italic; }
+  #portfolio .text-popout a {
+    color: #FFCCB2;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: underline; }
+    #portfolio .text-popout a:hover {
+      color: #FBBBA0;
+      text-decoration: none; }
 
 .portfolio-box {
   position: relative;

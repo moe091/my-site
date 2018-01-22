@@ -20,7 +20,7 @@ hr.light {
 }
 
 a {
-  color: $primary;
+	color: $primary;
   @include transition-all;
   &:hover {
     color: darken($primary, .1);
@@ -37,8 +37,42 @@ h6 {
 }
 
 .text-medium {
-		font-size: 18px !important;
+		font-size: 14px;
+		a {
+				color: #FFCCB2;
+				font-style: italic;
+		}
+	
+		
 }
+
+.text-medium.fa-4x {
+		font-size: 4em;
+}
+
+.light-text {
+		color: $white; 
+		.text-muted {
+			color: $gray-300 !important;
+		} 
+}
+.text-muted {
+		a {
+					color: #FFCCB2;
+					font-style: italic;
+			}
+}
+
+.text-popout { 
+		color: $white;
+		padding: 8px;
+		border-radius: 8px; 
+		margin-bottom: 1em;
+		-webkit-box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.1);
+		-moz-box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.1);
+		box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.1);
+}
+
 
 .black-tint {
 		background-color: rgba(0, 0, 0, 0.3);
@@ -50,7 +84,7 @@ h6 {
 		text-decoration: underline;
 }
 .black-text:hover {
-		color: #601500;
+		color: #601500; 
 		font-weight: bold;
 		text-decoration: underline;
 }
@@ -68,16 +102,20 @@ h6 {
 }
 
 .text-faded {
-  color: fade-out($white, .3);
+  color: fade-out($white, .2);
 }
 
 section {
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 .section-heading {
   margin-top: 0;
+	font-size: 2em;
+	text-align: center;
+
 }
+
 
 ::-moz-selection {
   color: $white;
@@ -103,4 +141,32 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: $gray-900;
+}
+
+
+.about-me-bullet {
+	color: $gray-200;
+	display: inline-block;
+	margin: 8px 0; 
+	font-weight: normal;
+	width: 90%;
+	text-align: left;
+	font-style: italic;
+	text-indent: 1em;
+	&:before {
+    content: "\f101";  /* this is your text. You can also use UTF-8 character codes as I do here */
+    font-family: FontAwesome; 
+		margin-right: 1em;
+ }
+	strong { 
+		color: #fff;
+	}
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.top-space {
+	padding-top: 1em;
 }

@@ -1,4 +1,34 @@
 // Styling for the portfolio section
+#portfolio {
+	padding-top: 26px !important;
+	h1 {
+		text-align: center;
+		margin: 16px 0;
+  	font-family: 'Merriweather' !important;
+	}
+	p {
+		text-align: center;
+		margin: 26px 0;
+  	font-family: 'Merriweather' !important;
+		font-size: 14px;
+		font-style: italic;
+	}
+	.text-popout {
+		
+		a {
+			color: #FFCCB2;
+			font-style: italic;
+			font-weight: bold;
+			font-size: 16px;
+			text-decoration: underline;
+			&:hover {
+				color: #FBBBA0; 
+				text-decoration: none;
+			}
+		}
+	}
+}
+
 .portfolio-box {
   position: relative;
   display: block;
@@ -13,7 +43,7 @@
     text-align: center;
     opacity: 0;
     color: $white;
-    background: fade-out($primary, .1);
+    background: fade-out($primary, .1);  
     @include transition-all;
     .portfolio-box-caption-content {
       position: absolute;

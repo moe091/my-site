@@ -10,13 +10,12 @@
 		text-align: center;
 		margin: 26px 0;
   	font-family: 'Merriweather' !important;
-		font-size: 14px;
+		font-size: 16px;
 		font-style: italic;
 	}
 	.text-popout {
-		
 		a {
-			color: #FFCCB2;
+			color: #FBC8B0;
 			font-style: italic;
 			font-weight: bold;
 			font-size: 16px;
@@ -33,7 +32,7 @@
   position: relative;
   display: block;
   max-width: 650px;
-  margin: 0 auto;
+  margin: 16px auto;
   .portfolio-box-caption {
     position: absolute;
     bottom: 0;
@@ -64,7 +63,7 @@
       .project-name {
         font-size: 18px;
       }
-    }
+    }  
   }
   &:hover {
     .portfolio-box-caption {

@@ -88,6 +88,9 @@ h6 {
 		font-weight: bold;
 		text-decoration: underline;
 }
+.bg-light {
+	background-color: #f6f3f2 !important;
+}
 
 .top-buffer {
 		margin-top: 16px;
@@ -113,10 +116,11 @@ section {
   margin-top: 0;
 	font-size: 2em;
 	text-align: center;
-
+	font-family: 'Rammetto One', cursive;
+	display: block;
 }
 
-
+  
 ::-moz-selection {
   color: $white;
   background: $gray-900;
@@ -125,7 +129,7 @@ section {
 
 ::selection {
   color: $white;
-  background: $gray-900;
+  background: $gray-900; 
   text-shadow: none;
 }
 
@@ -169,4 +173,9 @@ body {
 
 .top-space {
 	padding-top: 1em;
+}
+
+
+.hide {
+	display: none;
 }

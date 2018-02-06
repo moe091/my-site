@@ -70,6 +70,9 @@ h6 {
   font-weight: bold;
   text-decoration: underline; }
 
+.bg-light {
+  background-color: #f6f3f2 !important; }
+
 .top-buffer {
   margin-top: 16px; }
 
@@ -88,7 +91,9 @@ section {
 .section-heading {
   margin-top: 0;
   font-size: 2em;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Rammetto One', cursive;
+  display: block; }
 
 ::-moz-selection {
   color: #fff;
@@ -133,6 +138,9 @@ body {
 
 .top-space {
   padding-top: 1em; }
+
+.hide {
+  display: none; }
 
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
@@ -240,10 +248,10 @@ header.masthead {
     text-align: center;
     margin: 26px 0;
     font-family: 'Merriweather' !important;
-    font-size: 14px;
+    font-size: 16px;
     font-style: italic; }
   #portfolio .text-popout a {
-    color: #FFCCB2;
+    color: #FBC8B0;
     font-style: italic;
     font-weight: bold;
     font-size: 16px;
@@ -256,7 +264,7 @@ header.masthead {
   position: relative;
   display: block;
   max-width: 650px;
-  margin: 0 auto; }
+  margin: 16px auto; }
   .portfolio-box .portfolio-box-caption {
     position: absolute;
     bottom: 0;

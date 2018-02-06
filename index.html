@@ -1,5 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!--
+  	TODO:
+  	
+  	plans...
+  		Turn the 'services' section into an interactive demo showing off pieces of different things I can do. e.g clips/screenshots of Merkle Brown, NuTrack, and portfolio page itself(webpage-inception/recursion):
+  		- dark/black background, with a barely lit(gradient from dark-grey to black) floor section at the bottom extending up and to the middle(angled to look like a floor).
+  		- full-screen(100vh)
+  		- Across the top is a row with 3-4 blocks(web apps, static sites, games, get in touch). whichever one is selected slides to the end/right, 'rotating' the whole row(any blocks to the right will rotate off the side and come back on the left). ends of the row have a gradient from transparent-to-black, so that before a block slides off the end it looks like it's fading out as it moves further to the right, or fading in as it moves in from the left. Maybe mess around with squeezing/stretching the width as it goes off one of the ends too(if x > threshold then width = maxWidth * (x - threshhold) * modifier / 100)
+  		- whichever item is current being displayed is shown below the row, taking up most of the screen. There is large text to the left going from top to bottom of screen, with a big picture/gif/video to the right taking up most of the right side of screen. Title is above the text on the left, not above the whole thing.
+  		
+  		
+  		PORTFOLIO...
+  		Also full-screen, but this time white/light colored:
+  		
+  				-!!!!!!!!!!Make it so that the portfolio section looks like a block/box, and the services section is an empty space/cube. The 'floor' part of the services section can be made to look like the top of the 'portfolio' section block.
+  		
+  		- 3x3 large squares for each project. Each square is an image, tinted a different color(red, purple, blue, pink, orange, yellow) with white text over it for the name and maybe some details/description. Hovering over the square gets rid of the tint, and makes the square grow a little bit(without effecting positioning of other blocks. for every px the width/height grows, decrease the margins of the square or the padding of it's container by the same amount)
+  		
+  		- when a square/project is clicked, all the project squares fade out, and then a full-screen div fades in from top to bottom(render the full-screen div and another full-screen white div covering it, the white div has a small gradient to transparent at the top. white div slides down and off the bottom or shrinks to 0 height, giving the appearance of the project-div fading in from top to bottom).
+  		
+  		- project details div(and the project section in general) should be very open and spacey. Is very white(with maybe some slight grey gradient in the middle), with big paddings/margins around all the text and images. Make it feel free and open and calm, instead of congested and cluttered and hectic.
+  		
+  		
+  		
+  		Create an image for skills section, listing all languages/tech in a tree-like structure. Put that in the right col and put a short bio on the left
+  -->
 
   <head>
 
@@ -17,6 +43,7 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Rammetto+One" rel="stylesheet">
 
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
@@ -67,7 +94,7 @@
             <hr>
           </div>
           <div class="col-lg-10 mx-auto">
-            <p class="text-faded mb-5 text-medium"><strong>Hello,</strong> I'm a software developer that loves creating. I use my programming skills to make creative and high-quality websites, mobile apps, games, and other software. If you are looking for my blog, <a href="#">Click Here.</a>, Otherwise, scroll down to learn more about me, check out my portfolio, or contact me about working on your next project or anything else related to software dev.
+            <p class="text-faded mb-5 text-medium">I write code and create things. I specialize in Single-Page Web App development and browser-based games/interactive media. Basically, if you want a website that does cool and complicated things, I'm the guy you should hire.
              </div>
         </div>
 				<div class="row">
@@ -93,10 +120,17 @@
       </div>
       <div class="container">
       	<div class="row light-text">
-      		<div class="col-lg-10 offset-lg-1 text-center"> 
-           <p class="text-faded mb-4 text-medium top-space">
-						 I love creating things; Programming is just the tool that I use to create - one that I think I've gotten pretty decent at using - but I also bring a lot of other very useful skills to the table. I have experience with the full development cycle for websites/web apps, mobile apps, and games. This means that I can turn that web app idea you've been wanting to make into a quality website. I can ask you some questions about your business and use that information to create the perfect website to increase your sales, retention, turnover rate, or whatever your goal is. I can help turn your game concept into a full-fledged design and then program it for you. I can take a set of business requirements or specifications and write clean, robust, and error-free code that does exactly what it's supposed to. Right now I am searching for employment as a web or software developer and am also open to accepting freelance jobs, so <a href="#">contact me</a> if you need to hire a creator who happens to be good at writing code
+      		<div class="col-lg-5 offset-lg-1 text-center"> 
+          	<p class="text-faded mb-4 text-medium top-space">
+						 	I am a full-stack web developer, meaning I can create a back end that connects to a database, manipulates data, and sends data to the frontend - and I can also do complex front end development, create complex UI's, make a web page adapt to different screen sizes and adjust it's layout to look great at any size, and grab data from the backend server and display it in an aesthetically pleasing and intuitive way. I can implement pretty much any functionality you can imagine in a web app. 
             </p>
+					</div>
+           
+      		<div class="col-lg-5 text-center">
+           	<p class="text-faded mb-4 text-medium top-space">
+						  I also love to create fun and interactive content for websites. That includes anything from real-time data visualization to a complete, fully-featured game that you can play on a website without downloading anything(even on mobile phones!). Combined with my back end / front end web development skills, I can create some truly unique and impressive web experiences. Check out this video of my current HTML5 game project <a href="https://www.youtube.com/watch?v=rKEsksspLBQ"> "Merkle Brown" </a> for an example of what web browser based games are capable of
+            </p>
+            
           	
           	 <!--
           	<h2 class="section-heading text-white">What do I do?</h2>
@@ -107,37 +141,48 @@
             	As stated in the sectio to the left(or above if you're on a small screen), I consider myself a creator. Programming is just the tool that I use, and I personally thing I'm pretty darn good at using it, but I also bring a lot of other very useful skills to the table. I have experience with the full development cycle for websites/web apps, mobile apps, and games. This means that I can turn that web app idea you've been wanting to make into a quality website, I can ask you some questions about your business and use that information to create the perfect website to increase your sales, I can help turn your game concept into a full-fledged design and the program it for you, I can take a set of business requirements or specifications and write clean, robust, and error-free code that does exactly what it's supposed to. Right now I am searching for employment as a web or software developer and am also open to accepting freelance jobs, so <a href="#">contact me</a> if you need to hire a creator who happens to be good at writing code
             </p>
             --> 
-      		</div>
+      		</div>	
       	</div>
+      	
+      	
+      		<div class="row">
+						<div class="col-lg-8 offset-lg-2 text-center mt-5">
+							<p class="text-white mb-4 text-large top-space hide">
+								Here are a few different ways I can use my skills to create awesome software for you! These are just a few of the most common applications of my skillset, I have experience creating many other types of software - and even if I don't have experience with something I'm always up for learning new things and am capable of picking up new technologies and skills on the fly if the job calls for it.
+							</p>
+						</div>
+					</div>
+     	
+     	
       </div>
       <div class="container-fixed">
         <div class="row light-text">
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto text-popout">
               <i class="fa fa-4x fa-wifi text-medium mb-3 sr-icons"></i>
-              <h3 class="mb-3">Web</h3>
-              <p class="text-muted mb-0">Web development is my specialty, I can create anything from a complex web-app to a simple landing page. I'm experienced with the full stack of web development and can also assist with the actual design of your site. I know how to use all of my skills and tools to create a customized website that is designed from the ground up to meet your needs</p>
+              <h3 class="mb-3">Web Applications</h3>
+              <p class="text-muted mb-0">Web Applications include everything from social-media sites, to e-commerce stores, to blogs. I'm great at taking large, complicated projects, and using the right tools and techniques to implement them in a simple, understandable way that works well and is easy to manage</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto text-popout">
-              <i class="fa fa-4x fa-android text-medium mb-3 sr-icons"></i>
-              <h3 class="mb-3">Android</h3>
-              <p class="text-muted mb-0">I use Java and the Android SDK to create native, performant Android apps and games. I can create a standalone app for your company or idea, hook the app up to your existing backend, or even create a new backend from scratch to support your app(and, if needed, support your website at the same time)</p>
+              <i class="fa fa-4x fa-home text-medium mb-3 sr-icons"></i>
+              <h3 class="mb-3">Static Websites</h3>
+              <p class="text-muted mb-0">If you don't need all the complex features of a web app, I can also create beautiful static websites, such as a website for a resturaunt or small business. I'm always studying and practicing UI/UX and Web Design so I can make sites easy-to-use, great looking sites that make users want to stay</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto text-popout">
               <i class="fa fa-4x fa-gamepad text-medium mb-3 sr-icons"></i>
-              <h3 class="mb-3">Games</h3>
-              <p class="text-muted mb-0">If you are creating a game to help with your company's branding, or just an indie game dev that needs another coder, I would love to help create your game! I specialize in HTML5 browser games(that can even run in mobile web browsers with no download)! Check out my current game project here: <a href="#">Merkle Brown</a></p>
+              <h3 class="mb-3">Games / Interactive</h3>
+              <p class="text-muted mb-0">With web browsers and computers in general both getting more powerful, it's now possible to create high-quality games that run right on your website. Ask me about how I can use game design and/or interactive media to improve your websites branding and make users remember your site!</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto text-popout">
               <i class="fa fa-4x fa-envelope text-medium mb-3 sr-icons"></i>
               <h3 class="mb-3">Get In Touch!</h3>
-              <p class="text-muted mb-0">Don't hesitate to get in touch with me! If you are interested in hiring me or just want to know more - even if you are a fellow developer and just want to ask some questions - feel free to <a href="#">CONTACT ME</a></p>
+              <p class="text-muted mb-0">Feel free to contact me if you have any questions or are interested in hiring me! I am open to new work opportunities, whether it's freelance, contract, or full-time work. <br><br><a href="#">Contact Me</a></p>
             </div>
           </div>
         </div>
@@ -147,10 +192,10 @@
     <section class="p-0" id="portfolio">
       <div class="container-fluid p-0">
        	<div class="row">
-					<div class='col-md-6 offset-md-3 text-popout bg-primary'>
-						<h1>Portfolio</h1>
-            <hr class="light my-4">
-						<p>Here's a small sample of some of my projects, spread out over multiple years and multiple different fields of software development. If you are checking out my projects anyway, I suggest taking a look at <a href="#">NuTrack</a>, my current Node/React Single-Page Web App project. Though it's not complete yet, I've made a ton of progress and it is the best representation of my current skills as a developer. I've also made a few blog posts related to developing the app or the technologies I'm building it with</p>
+					<div class='col-md-6 offset-md-3 text-primary'>
+            <span class="section-heading">Portfolio</span>
+            <hr class="primary my-4 bg-primary">
+						<p>These are just a few projects to represent my work. I've created dozens of different pieces of software over the last decade, across a wide variety of fields, and have chosen the best one or two from each field of development to display</p>
 					</div>
        	</div>
         <div class="row no-gutters popup-gallery">
@@ -214,36 +259,6 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
         </div>
       </div>
     </section>
@@ -253,82 +268,35 @@
       <div class="container-fixed">
         <div class="row">
           <div class="col-lg-4 offset-lg-2 text-center">
-            <h2 class="section-heading text-white">A Bit About Me</h2>
-            <hr class="light my-4">
-            <p class="text-faded mb-4 text-medium text-bold">
-							<div class="text-popout">
-        			I tried to keep this short, but have evidently failed. I urge you to at least skim through it anyway - it's not so long as it looks!<br /> <br /></b>I'm basically just a normal guy, I love learning new things, creating things, and programming. I'm pretty good at problem-solving, pretty bad at art(but getting better - I'm practicing art so I can design and create better software), great at communicating and getting along or working with others. Right now my main goal, aside from completing my current software projects, is to join a team and work as a professional developer. I want to interact with other developers, learn from them, and make something awesome as part of a team; I have been preparing for such an opportunity and am pretty confident that I could be a very valuable and productive member of a development team. Here's a few thoughts about my experience with programming and software development:
-        			
-        			<span class='about-me-bullet'>I first got into programming because I loved technology and games, and I thought coding was 'cool'(or maybe I thought it was 'Da Bomb,' I don't really remember and this was in the 90s so it's very possible)
-							</span>
-							
-         			<span class='about-me-bullet'>I kept writing code because I was good at it; logic and problem solving were/are my strengths and, being the show-offy youngster I was, I loved doing stuff I was good at
-							</span>
-							
-         			<span class='about-me-bullet'>programming is still my passion because I still love technology and games, I'm still good at logic and problem solving(but fortunately not such a showoff anymore; life has certainly humbled me), and because as an adult I found that I love creating things and that's what I want to do with my life  - programming is an extremely creative tool with infinite possibilities for creation, it's awesome
-							</span>
-							
-         			<span class='about-me-bullet'>My desire to create things lead me to broaden and improve my programming skills. I wanted to create mobile apps, games, websites, AI algorithms, etc, so I learned how to. experiencing many different types of software development helped me understand how to create better software and write better code in general
-							</span>
-							
-         			<span class='about-me-bullet'>My journey in software dev has lead me to develop many other adjacent skills. I got <span class="strike">good</span> better at visual art by creating graphics for games and designing websites, I learned how to think about and apply principles of UI and UX design so I could make better websites and apps, and I learned how to engineer fun in my many attempts at game design(a skill which I am currently applying in a different way - in order to improve the user experience in my current web app project and motivate users to use my app to improve their eating and nutrition habits)
-							</span>
-         	
-         			<span class='about-me-bullet'>This journey(plus a lot of hard work) has lead me to become a skilled creator of websites, apps, and games. I know how to write good code, but I also know how to design a good user experience, create aesthetics that compliment the software's functionality, and communicate with others to work together and convert an idea into quality software</span>
-         			
-        			</div>
-        			
-         			
-						</p>
-          	
-          	 <!--
-          	<h2 class="section-heading text-white">What do I do?</h2>
+            <h2 class="section-heading text-white">About Me</h2>
             <hr class="light my-4">
             
-           
-            <p class="text-faded mb-4 text-medium">
-            	As stated in the sectio to the left(or above if you're on a small screen), I consider myself a creator. Programming is just the tool that I use, and I personally thing I'm pretty darn good at using it, but I also bring a lot of other very useful skills to the table. I have experience with the full development cycle for websites/web apps, mobile apps, and games. This means that I can turn that web app idea you've been wanting to make into a quality website, I can ask you some questions about your business and use that information to create the perfect website to increase your sales, I can help turn your game concept into a full-fledged design and the program it for you, I can take a set of business requirements or specifications and write clean, robust, and error-free code that does exactly what it's supposed to. Right now I am searching for employment as a web or software developer and am also open to accepting freelance jobs, so <a href="#">contact me</a> if you need to hire a creator who happens to be good at writing code
-            </p>
-            --> 
-          </div>
-          
-          <div class="col-lg-4 text-center">
+            	<p class="text-light">
+            		My passion for creating things is what first drew me into programming. At 10 I was already a computer nerd, but I didn't know that it was so easy for anyone to start writing code and creating actual software until I came across a "Hello World" tutorial in VB6 on a modding forum for the first Halo game. After being astonished that I could type some code into a computer and make it do something, I instantly began fantasizing about all the cool possibilities, mostly games at first, of different things I could make. That's when my passion for creating things and desire to learn more took over.
+            	</p>
+            	
+            	<p class="text-light">
+            		I made a lot of games early on, and still enjoy designing and developing games as side projects(in fact, I have a pretty serious game project I'm working on right now: <a href="#">Merkle Brown</a>), but I quickly started coming up with all sorts of ideas for different types of software; websites, tools, and eventually mobile apps. Although I have some experience creating real software in every one of those fields, wev development is my specialty now. I want to create software that is accessible, used by a lot of people, and I don't want to limit the possibilities of what the software I create can do. The web is probably the most accessible and highly used platform, and with recent advances is capable of almost anything desktop software can do. Websites can be run on PCs, smartphones, tablets, even TVs now, and I have have a document full of website/web app ideas that is almost as big as my desire to create more software.
+            	</p>
             
-            
-            
-            <h2 class="section-heading text-white">My Skills</h2>
+					</div>
+       
+       
+          <div class="col-lg-4 offset-lg-2 text-center">
+            <h2 class="section-heading text-white">Skills</h2>
             <hr class="light my-4">
             
-            <p class="text-faded mb-4 text-medium">
-            	<div class="text-popout">
-            		I'll save the bulleted, keyword-stuffed list for my resume and just talk about the technologies I use to create things.
-            		
-            		<span class='about-me-bullet'>
-            		<strong>For basic frontend web development,</strong> I can use any combination of html or html5 + CSS or CSS3 + vanilla JS or JQuery. I'm also pretty good with React, SASS, Bootstrap and a ton of lesser-known and more specific js libraries(a ton meaning like > 0.0012% of them in this case). I've also used Angular, but am not an expert and haven't used it in a while(meaning I could easily get up and running with it very quickly and be very effective/productive in angular). There are probably a ton of other smaller technologies I'm forgetting or that are too small to mention
-            	</span>
+            	<p class="text-light">
+            		As a full-stack developer, I'm most comfortable working with Node, Express, and MongoDB on the back end and React for front end development. I've also used Ruby on Rails and a little bit of Java for back end programming, and am very competent using JQuery or vanilla JS for front end development. I've used javascript extensively, in all of my web development projects as well as a few games I developed(including Merkle Brown - one of my current side projects), and consider myself an expert in javascript. I've learned about all the changes and new features of ES6 as well and have gotten very good at working with it.
+            	</p>
             	
-            	<span class='about-me-bullet'>
-            		<strong>My go-to backend tech</strong> these days is Node.js. I like to work with Node, MongoDB, and Express for most projects, unless it's not a good fit for the project for whatever reason. Like any other Node developer, I'll also throw in a bunch of other packages depending on the specific needs of my project(body-parser, passport, morgan, etc). I also have experience with Ruby on Rails(versions 3 and 4, though I want to try out Rails 5 and specifically Action-Cable soon). I've technically used DJango before too, but it was long ago and I wouldn't be able to pick it up again and use it without spending the first few days googling how to do everything until I got used to it again
-            	</span>
+            	<p class="text-light">
+            		I'm also no stranger to HTML/CSS, two languages I've been using almost since I started programming around 2003. Nowadays, I'm very competent with HTML5/CSS3 and CSS preprocessors such as SASS. I know how to use HTML and CSS(or SASS) together to create responsive websites that work well on all browsers, regardless of screen size and how up-to-date the browsers support is for CSS. Combined with my advanced javascript and back end development experience, I can create anything from a basic static webpage for a small business to a complex SPA(single-page app) with all the latest features that communicates with a custom back end and/or 3rd part API's - all while maintaining great performance.
+            	</p>
             	
-            	<span class="about-me-bullet">
-            		<strong>My mobile experience</strong> is mostly limited to Android Development, and although it was a few years ago I still remember the general principles and would only need to refresh myself real quick on the android API and some other specifics in order to be competent at Android dev again. I used Java and the Android SDK to create native Android apps, as well as libGDX, openGL, or AndEngine to create native android games.
-            	</span>
-            	
-            	<span class="about-me-bullet">
-								<strong>Game dev</strong>... I've been making games in one way or another for a decade, on many different platforms. The concepts, and sometimes even the libraries(e.g openGL, libGDX), are the same on any platform. I understand the nuances of using an entity-component-system vs a hierarchical OOP structure to organize game objects, how to optimize the game loop, writing pathfinding algorithms and designing steering behaviors to program game-ai, and all that other advanced sounding stuff. I feel very comfortable working on game projects, I can implement any reasonably-sized game design and meet any reasonable performance or time requirements.
-           		</span>
-           		
-           		<span class="about-me-bullet">I also particularly enjoy solving complex problems with <strong>algorithms and data-structures</strong>. This is a skill that's applicable in every single type of development, and helps improve your over all problem solving abilities. I am far from the best, but I occassionally compete in algorithms competitions on sites like topcoder.com, and am good at solving complex coding problems using advanced data-structores and techniques such as Dynamic Programming, Greedy Algorithms, Geometry/trig, depth- and breadth- first-search and all the algorithms derived from them, and many more</span>
-           		
-           		<span class="about-me-bullet">
-           			<strong>KEYWOOOORDS:</strong> JSON, REST, HTTP, AJAX, OOP, MVC, XML, JSX...
-           		</span>
-            	</div>
-            	
-            </p> 
-          </div>
-          
+            
+					</div>
+       
         </div>
       </div>
     </section>

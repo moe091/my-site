@@ -43,6 +43,10 @@ h6 {
   color: #fff; }
   .light-text .text-muted {
     color: #dee2e6 !important; }
+  .light-text a {
+    color: #aecafd; }
+    .light-text a:hover {
+      color: #fff; }
 
 .text-muted a {
   color: #FFCCB2;
@@ -325,5 +329,3 @@ header.masthead {
     background-color: #ee4b28 !important; }
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important; }
-
-/*# sourceMappingURL=creative.css.map */

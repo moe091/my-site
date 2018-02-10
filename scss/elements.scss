@@ -1,0 +1,18 @@
+.feature-text {
+  background-color: #f8e6e5!important;
+  color: #E24438;  
+  p {
+    font-size: 16px !important;
+    font-style: normal !important;
+  }
+  a {
+    color: #804644 !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    text-decoration: none !important;
+    font-style: n
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+}

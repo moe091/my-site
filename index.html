@@ -118,16 +118,16 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container-fixed">
       	<div class="row light-text">
       		<div class="col-lg-5 offset-lg-1 text-center"> 
-          	<p class="text-faded mb-4 text-medium top-space">
-						 	I am a full-stack web developer, meaning I can create a back end that connects to a database, manipulates data, and sends data to the frontend - and I can also do complex front end development, create complex UI's, make a web page adapt to different screen sizes and adjust it's layout to look great at any size, and grab data from the backend server and display it in an aesthetically pleasing and intuitive way. I can implement pretty much any functionality you can imagine in a web app. 
+          	<p class="text-faded mb-4 text-medium top-space text-center">
+						 	I am a full-stack web developer, meaning I can create a back end that connects to a database, manipulates data, and sends data to the frontend - and I can also do complex front end development, create complex UI's, make a web page adapt to different screen sizes and communicate with the back end to grab data and display it in a clear and appealing way. I've created many web applications from scratch and am experienced at creating complex web apps with clean, well-organized code.
             </p>
 					</div>
            
       		<div class="col-lg-5 text-center">
-           	<p class="text-faded mb-4 text-medium top-space">
+           	<p class="text-faded mb-4 text-medium top-space text-center">
 						  I also love to create fun and interactive content for websites. That includes anything from real-time data visualization to a complete, fully-featured game that you can play on a website without downloading anything(even on mobile phones!). Combined with my back end / front end web development skills, I can create some truly unique and impressive web experiences. Check out this video of my current HTML5 game project <a href="https://www.youtube.com/watch?v=rKEsksspLBQ"> "Merkle Brown" </a> for an example of what web browser based games are capable of
             </p>
             
@@ -189,6 +189,10 @@
       </div>
     </section>
 
+    
+    
+    
+    
     <section class="p-0" id="portfolio">
       <div class="container-fluid p-0">
        	<div class="row">
@@ -200,60 +204,60 @@
        	</div>
         <div class="row no-gutters popup-gallery">
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+            <a class="portfolio-box" data-toggle="modal" data-target="#nutrack-modal">
               <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Web App | Javascript ES6 - Node - React - Express - SASS
                   </div>
                   <div class="project-name">
-                    Project Name
+                    NuTrack
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+            <a class="portfolio-box" data-toggle="modal" data-target="#merkle-brown-modal">
               <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    HTML5 Game | Javascript - Phaser - Canvas - WebGL - GLSL
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Merkle Brown
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+            <a class="portfolio-box" data-toggle="modal" data-target="#lets-play-modal">
               <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Android App - Java - Android SDK
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Let's Play!
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
+            <a class="portfolio-box" data-toggle="modal" data-target="#maurice-nowicki-modal">
               <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Web App | Javascript ES6 - Node - Express - SASS - React - Redux
                   </div>
                   <div class="project-name">
-                    Project Name
+                    MauriceNowicki.com
                   </div>
                 </div>
               </div>
@@ -262,15 +266,102 @@
         </div>
       </div>
     </section>
+    
+    <!-- Project Modal - Merkle Brown -->
+    <div class="modal fade" id="merkle-brown-modal" tabindex="-1" role="dialog" aria-labelledby="Merkle Brown" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Merkle Brown - Javascript HTML5 Game</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">View on Github</button>
+            <button type="button" class="btn btn-primary">Merkle Brown Twitter</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Project Modal - NuTrack -->
+    <div class="modal fade" id="nutrack-modal" tabindex="-1" role="dialog" aria-labelledby="Merkle Brown" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">NuTrack - Web App</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">View Live</button>
+            <button type="button" class="btn btn-primary">View on Github</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Project Modal - Let's Play -->
+    <div class="modal fade" id="lets-play-modal" tabindex="-1" role="dialog" aria-labelledby="Merkle Brown" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Let's Play - Android App</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">View on App Store</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Project Modal - Let's Play -->
+    <div class="modal fade" id="maurice-nowicki-modal" tabindex="-1" role="dialog" aria-labelledby="Merkle Brown" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Maurice Nowick - Website</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">View on Github</button>
+            <button type="button" class="btn btn-primary">View Live...?</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
    
     <section class="bg-primary" id="about">
       <div class="container-fixed">
         <div class="row">
-          <div class="col-lg-4 offset-lg-2 text-center">
+          <div class="col-lg-5 offset-lg-1 text-center">
             <h2 class="section-heading text-white">About Me</h2>
             <hr class="light my-4">
-            
+                <p class="text-center light-text">Read my <a href="#">Blog</a> to learn more about what I do</p>
             	<p class="text-light">
             		My passion for creating things is what first drew me into programming. At 10 I was already a computer nerd, but I didn't know that it was so easy for anyone to start writing code and creating actual software until I came across a "Hello World" tutorial in VB6 on a modding forum for the first Halo game. After being astonished that I could type some code into a computer and make it do something, I instantly began fantasizing about all the cool possibilities, mostly games at first, of different things I could make. That's when my passion for creating things and desire to learn more took over.
             	</p>
@@ -282,10 +373,10 @@
 					</div>
        
        
-          <div class="col-lg-4 offset-lg-2 text-center">
+          <div class="col-lg-5 text-center">
             <h2 class="section-heading text-white">Skills</h2>
             <hr class="light my-4">
-            
+                <p class="text-center light-text">View my <a href="#">resume</a> for a more complete list of my experience and skills</p>
             	<p class="text-light">
             		As a full-stack developer, I'm most comfortable working with Node, Express, and MongoDB on the back end and React for front end development. I've also used Ruby on Rails and a little bit of Java for back end programming, and am very competent using JQuery or vanilla JS for front end development. I've used javascript extensively, in all of my web development projects as well as a few games I developed(including Merkle Brown - one of my current side projects), and consider myself an expert in javascript. I've learned about all the changes and new features of ES6 as well and have gotten very good at working with it.
             	</p>
@@ -306,20 +397,20 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <h2 class="section-heading">contact Me</h2>
             <hr class="my-4">
-            <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+            <p class="mb-5">I'm currently seeking full-time work as a developer, and also open to taking on new freelance jobs! If you are interested in hiring me, or if you just have a question, feel free to contact me using the information below.</p>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4 ml-auto text-center">
             <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-            <p>123-456-6789</p>
+            <p>215-622-7171</p>
           </div>
           <div class="col-lg-4 mr-auto text-center">
             <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
             <p>
-              <a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a>
+              <a href="mailto:MNowicki@gmail.com">MNowicki091@gmail.com</a>
             </p>
           </div>
         </div>
@@ -333,7 +424,6 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>

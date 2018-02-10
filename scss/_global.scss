@@ -4,7 +4,7 @@ html {
   width: 100%;
   height: 100%;
 }
-
+  
 body {
   @include serif-font;
 }
@@ -55,6 +55,13 @@ h6 {
 		.text-muted {
 			color: $gray-300 !important;
 		} 
+  
+  a {
+    color: $light-link;
+    &:hover {
+      color: $white;
+    }
+  }
 }
 .text-muted {
 		a {

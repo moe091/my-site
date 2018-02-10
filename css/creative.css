@@ -308,6 +308,16 @@ header.masthead {
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
       font-size: 22px; } }
 
+.project-img {
+  width: 45%;
+  margin: 1%; }
+
+.modal-diasdflog {
+  width: 80%;
+  /* respsonsive width */
+  margin-left: -40%;
+  /* width/2) */ }
+
 .text-primary {
   color: #F05F40 !important; }
 
@@ -329,3 +339,10 @@ header.masthead {
     background-color: #ee4b28 !important; }
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important; }
+
+@media (min-width: 768px) {
+  .modal-xl {
+    width: 90%;
+    max-width: 1600px; } }
+
+/*# sourceMappingURL=creative.css.map */

@@ -1,0 +1,16 @@
+.feature-text {
+  background-color: #f8e6e5 !important;
+  color: #E24438; }
+  .feature-text p {
+    font-size: 16px !important;
+    font-style: normal !important; }
+  .feature-text a {
+    color: #804644 !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    text-decoration: none !important;
+    font-style: none; }
+    .feature-text a:hover {
+      text-decoration: underline !important; }
+
+/*# sourceMappingURL=elements.css.map */

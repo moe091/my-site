@@ -30,9 +30,12 @@
   }
 }
 
+.modal {
+	padding-right: 0 !important;
+}
 @media (min-width: 768px) {
   .modal-xl {
-    width: 90%;
-   max-width:1600px;
+    width: 96%;
+   	max-width:1600px;
   }
 }

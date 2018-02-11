@@ -9,6 +9,10 @@ body {
   @include serif-font;
 }
 
+#contact {
+	background-color: $bg;
+}
+
 hr {
   max-width: 50px;
   border-width: 3px;
@@ -103,6 +107,13 @@ h6 {
 		margin-top: 16px;
 }
 
+.bg-primary-img {
+  background-image: url(../img/orange-bg.jpg);
+    background-attachment: fixed;
+	-webkit-box-shadow: inset 0px 0px 6px 5px rgba(0,0,0,0.25);
+	-moz-box-shadow: inset 0px 0px 6px 5px rgba(0,0,0,0.25);
+	box-shadow: inset 0px -10px 15px -2px rgba(0,0,0,0.25), inset 0px 10px 12px 0px rgba(0,0,0,0.25);
+}
 .bg-primary {
   background-color: $primary !important;
 }

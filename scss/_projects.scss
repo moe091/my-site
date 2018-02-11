@@ -1,13 +1,113 @@
-.project-modal {
+.modal-content {
+	background-color: $bg;
+	color: $primary-dark;
+}
+.modal-body {
+	padding: 0 15px;
+}
+.modal-header {
+	text-align: center;
+	h5 {
+		display: inline-block;
+	}
+}
+.modal-header, .modal-footer {
+	background-color: #fff;
+	font-weight: bold;
+}
+
+
+.project-img-col {
+	position: relative;
+	background-color: #e5e6e8; 
 	
+	-webkit-box-shadow: inset 0px 0px 6px 5px rgba(0,0,0,0.25);
+	-moz-box-shadow: inset 0px 0px 6px 5px rgba(0,0,0,0.25);
+	box-shadow: inset 0px 0px 8px 8px rgba(0,0,0,0.25);
+	padding: 26px 12px;
 }
 
+.project-video-link-wrapper {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	display: inline-block;
+}
+.play-icon {
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	color: #000;
+	left: 25%;
+	right: 25%;
+	top: 25%;
+	bottom: 25%;
+	font-size: 100px;
+}
+.project-img-display {
+	padding: 1px; 
+	display: inline-block;
+}
 .project-img {
-	width: 45%;
-	margin: 1%;
+	width: 48%;
+	height: 25%;
+	margin: 4px 2px;
+	box-sizing: border-box;
+	cursor: pointer;
 }
 
-.modal-diasdflog {
-    width: 80%; /* respsonsive width */
-    margin-left:-40%; /* width/2) */ 
+
+.img-active {
+	margin-top: -2px;
+	margin-bottom: -2px;
+	padding: 1px;
+	border: 1px $secondary solid !important;
 }
+
+.project-img-main {
+	width: 100%; 
+	margin-bottom: 26px;
+}
+.project-iframe-wrapper {
+	position: relative;
+	img {
+		width: 100%;
+		height: auto;
+		visibility: hidden;
+	}
+}
+.project-iframe {
+	position: absolute;
+	width: 96%;
+	height: 96%;
+	top: 2%;
+	left: 2%;
+	right: 2%;
+	bottom: 2%;
+}
+
+
+.project-info {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.project-header {
+	font-weight: bold;
+	font-family: 'Rammetto One', cursive;
+}
+
+.project-subheader {
+	font-weight: bold;
+  font-family: 'Merriweather';
+}
+
+.project-tech {
+	font-style: italic;
+}
+
+.project-text {
+	text-align: left;
+	font-size: 12px;
+	font-family: 'Nanum Myeongjo', serif;
+}
+

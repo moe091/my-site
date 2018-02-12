@@ -333,13 +333,18 @@ header.masthead {
 
 .modal-content {
   background-color: #f8f9fb;
-  color: #CA482A; }
+  color: #CA482A;
+  max-height: 90vh; }
 
 .modal-body {
   padding: 0 15px; }
 
 .modal-header {
-  text-align: center; }
+  text-align: center;
+  overflow: hidden;
+  min-height: 5em;
+  align-items: center;
+  flex-wrap: wrap; }
   .modal-header h5 {
     display: inline-block; }
 
@@ -347,13 +352,20 @@ header.masthead {
   background-color: #fff;
   font-weight: bold; }
 
+.modal-footer {
+  min-height: 3em;
+  padding: 2px;
+  align-items: center; }
+  .modal-footer a {
+    color: #fff !important; }
+
 .project-img-col {
   position: relative;
   background-color: #e5e6e8;
   -webkit-box-shadow: inset 0px 0px 6px 5px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0px 0px 6px 5px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 0px 8px 8px rgba(0, 0, 0, 0.25);
-  padding: 26px 12px; }
+  padding: 8px 24px; }
 
 .project-video-link-wrapper {
   margin: 0;
@@ -373,12 +385,13 @@ header.masthead {
   font-size: 100px; }
 
 .project-img-display {
-  padding: 1px;
-  display: inline-block; }
+  padding: 4px 0;
+  display: inline-block;
+  border: 4px #000 solid;
+  background-color: #242424; }
 
 .project-img {
-  width: 48%;
-  height: 25%;
+  width: 46%;
   margin: 4px 2px;
   box-sizing: border-box;
   cursor: pointer; }
@@ -411,11 +424,16 @@ header.masthead {
 
 .project-info {
   padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  max-height: 80vh;
+  overflow-y: auto; }
 
 .project-header {
   font-weight: bold;
   font-family: 'Rammetto One', cursive; }
+
+.tldr {
+  font-size: 13px !important; }
 
 .project-subheader {
   font-weight: bold;
@@ -440,7 +458,10 @@ header.masthead {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
 
 .btn-xl {
-  padding: 1rem 2rem; }
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border-radius: 0;
+  border: 2px #F05F40 solid; }
 
 .btn-primary {
   background-color: #F05F40;
@@ -451,12 +472,22 @@ header.masthead {
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important; }
 
+.btn-header {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0;
+  width: 15em; }
+  .btn-header:hover {
+    background-color: rgba(88, 33, 26, 0.4) !important;
+    border-color: #F05F40 !important; }
+  .btn-header:focus {
+    box-shadow: none !important; }
+
 .modal {
   padding-right: 0 !important; }
 
 @media (min-width: 768px) {
   .modal-xl {
-    width: 96%;
+    width: 88%;
     max-width: 1600px; } }
 
 /*# sourceMappingURL=creative.css.map */

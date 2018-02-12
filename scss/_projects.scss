@@ -1,12 +1,18 @@
+
 .modal-content {
 	background-color: $bg;
 	color: $primary-dark;
+	max-height: 90vh; 
 }
 .modal-body {
-	padding: 0 15px;
+	padding: 0 15px; 
 }
 .modal-header {
 	text-align: center;
+	overflow: hidden;
+	min-height: 5em;
+	align-items: center;
+	flex-wrap: wrap;
 	h5 {
 		display: inline-block;
 	}
@@ -14,6 +20,16 @@
 .modal-header, .modal-footer {
 	background-color: #fff;
 	font-weight: bold;
+}
+
+.modal-footer { 
+	min-height:3em;
+	padding:2px;
+	align-items: center;
+	
+	a {
+		color: #fff !important; 
+	}
 }
 
 
@@ -24,7 +40,8 @@
 	-webkit-box-shadow: inset 0px 0px 6px 5px rgba(0,0,0,0.25);
 	-moz-box-shadow: inset 0px 0px 6px 5px rgba(0,0,0,0.25);
 	box-shadow: inset 0px 0px 8px 8px rgba(0,0,0,0.25);
-	padding: 26px 12px;
+	padding: 8px 24px;
+	 
 }
 
 .project-video-link-wrapper {
@@ -45,12 +62,13 @@
 	font-size: 100px;
 }
 .project-img-display {
-	padding: 1px; 
+	padding: 4px 0;
 	display: inline-block;
+	border: 4px #000 solid;
+	background-color: #242424;
 }
 .project-img {
-	width: 48%;
-	height: 25%;
+	width: 46%;  
 	margin: 4px 2px;
 	box-sizing: border-box;
 	cursor: pointer;
@@ -68,7 +86,7 @@
 	width: 100%; 
 	margin-bottom: 26px;
 }
-.project-iframe-wrapper {
+.project-iframe-wrapper { 
 	position: relative;
 	img {
 		width: 100%;
@@ -89,11 +107,16 @@
 
 .project-info {
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 10px; 
+	max-height: 80vh;
+	overflow-y: auto;
 }
 .project-header {
 	font-weight: bold;
 	font-family: 'Rammetto One', cursive;
+}
+.tldr {
+	font-size: 13px !important; 
 }
 
 .project-subheader {

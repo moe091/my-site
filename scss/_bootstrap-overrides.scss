@@ -13,6 +13,9 @@
 
 .btn-xl {
   padding: 1rem 2rem;
+	background-color: transparent;
+	border-radius: 0;
+	border: 2px $primary solid;
 }
 
 .btn-primary {
@@ -30,12 +33,26 @@
   }
 }
 
+.btn-header {
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 0;
+	width: 15em;
+	&:hover {
+		background-color: rgba(88, 33, 26, 0.4) !important;
+		border-color: $primary !important;
+	}
+	&:focus {
+		box-shadow: none !important;
+	}
+	
+}
+
 .modal {
 	padding-right: 0 !important;
 }
 @media (min-width: 768px) {
   .modal-xl {
-    width: 96%;
+    width: 88%;
    	max-width:1600px;
   }
 }

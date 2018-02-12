@@ -338,6 +338,8 @@ header.masthead {
 
 .modal-body {
   padding: 0 15px; }
+  .modal-body .row {
+    background-color: #fff; }
 
 .modal-header {
   text-align: center;
@@ -365,7 +367,9 @@ header.masthead {
   -webkit-box-shadow: inset 0px 0px 6px 5px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0px 0px 6px 5px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 0px 8px 8px rgba(0, 0, 0, 0.25);
-  padding: 8px 24px; }
+  padding: 8px 24px;
+  max-height: 80vh;
+  overflow-y: auto; }
 
 .project-video-link-wrapper {
   margin: 0;
@@ -446,6 +450,23 @@ header.masthead {
   text-align: left;
   font-size: 12px;
   font-family: 'Nanum Myeongjo', serif; }
+
+.quote {
+  display: inline-block;
+  text-align: center; }
+  .quote p {
+    display: inline-block;
+    padding-top: 1em;
+    width: 80%;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 28px; }
+    .quote p:before {
+      content: '"';
+      font-size: 26px; }
+    .quote p:after {
+      content: '"';
+      font-size: 26px; }
 
 .text-primary {
   color: #F05F40 !important; }

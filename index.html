@@ -25,6 +25,13 @@
   		
   		
   		Create an image for skills section, listing all languages/tech in a tree-like structure. Put that in the right col and put a short bio on the left
+  		
+  		
+  		Urgent To-Do's - before anyone looks at my portfolio:
+  		PORTFOLIO:
+  			- Do some algorithm writeups w/ solutions and post as a portfolio item to demonstrate competence/skill in algorithms/data-structures. Start with a Dijkstra or a difficult BFS/DFS, include some simple but tricky "riddle-y" problems, one or two DP problems, and anything else that is interesting or fun
+  		NUTRACK:
+  			- For each page that requires user to be logged in to user, add a "You must be logged in to access this page" warning, and below it give instructions such as "If you are viewing this site from my portfolio, log in(link in top nav bar) with username: nutrack password: nupass. Also create meals and fill up Tracker/Planner on the example account so users can easily view the web apps functionality
   -->
 
   <head>
@@ -234,7 +241,7 @@
           </div>
           <div class="col-lg-4 col-sm-6 portfolio-col">
             <a class="portfolio-box" data-toggle="modal" data-target="#lets-play-modal">
-              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+              <img class="img-fluid" src="img/lets-play/letsplay.png" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -248,12 +255,27 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6 portfolio-col">
-            <a class="portfolio-box" data-toggle="modal" data-target="#maurice-nowicki-modal">
-              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
+            <a class="portfolio-box" data-toggle="modal" data-target="#libra-modal">
+              <img class="img-fluid" src="img/libra/libra.png" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Web App | Javascript ES6 - Node - Express - SASS - React - Redux
+                    Android Game | Android - Java - AndEngine - OpenGL
+                  </div>
+                  <div class="project-name">
+                    Libra
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6 portfolio-col">
+            <a class="portfolio-box" data-toggle="modal" data-target="#mnowicki-modal">
+              <img class="img-fluid" src="img/mnowicki/portfolio-home.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Website | Javascript - ES6 - JQuery - SASS - Bootstrap
                   </div>
                   <div class="project-name">
                     MauriceNowicki.com
@@ -310,7 +332,7 @@
             	<div class="col-md-5 text-center project-img-col">
             	
             			
-            		<a class="project-img-display w-100" href="/img/portfolio/nutrack-search.png">
+            		<a class="project-img-display w-100" href="/img/merkle-brown/japan1-screen.png">
            				<div class="project-iframe-wrapper">
            					<img src="img/merkle-brown/japan1-screen.png">
             				<iframe class="project-iframe" src="https://www.youtube.com/embed/rKEsksspLBQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -345,8 +367,11 @@
     </div>
     
     
+    
+            
+            
     <!-- Project Modal - NuTrack -->
-    <div class="modal fade" id="nutrack-modal" tabindex="-1" role="dialog" aria-labelledby="Merkle Brown" aria-hidden="true">
+    <div class="modal fade" id="nutrack-modal" tabindex="-1" role="dialog" aria-labelledby="NuTrack" aria-hidden="true">
       <div class="modal-dialog project-modal modal-xl" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -366,7 +391,6 @@
 									Javascript - ES6 - Node - Express - React - React Router - Bootstrap - SASS - HTML5 - CSS3 - Passport - Mocha - Enzyme - Should - Webpack - Babel - USDA Nutrient API
 								</p>
             		
-            		<h4 class="project-subheader text-center">A Long 'Tl;DR'</h4>
             		<p class="project-text tldr">
             			NuTrack is a web application made with Node, MongoDB, React, and Express, among other technologies. It also has tests(still incomplete) written with Enzyme, Chai, and JSDom to ensure it works as intended in all scenarios, CSS3 styles compiled with SASS, Bootstrap to simplify the process of making responsive layouts, and many other libraries(but not too many, at least compared to most modern javascript projects!) to provide additional functionalities. 
             		</p>
@@ -401,23 +425,23 @@
             	<div class="col-md-6 text-center project-img-col">
             	
             		<a class="project-img-display w-100" href="/img/portfolio/nutrack-search.png">
-            				<img class="project-img-main" src="img/portfolio/nutrack-search.png">
+            			<img class="project-img-main" src="img/portfolio/nutrack-search.png">
             		</a>
-            		 
-            			<img class="project-img img-active" src="img/portfolio/nutrack-search.png">
-            		
-            		
-            		
-            			<img class="project-img" src="img/portfolio/nutrack-planneradd.png">
-								
-           			
-           			
-            			<img class="project-img" src="img/portfolio/nutrack-tracker.png">
-								
-           			
-           			
-            			<img class="project-img" src="img/portfolio/nutrack-createmeal.png">
-								
+
+								<img class="project-img img-active" src="img/portfolio/nutrack-search.png">
+
+
+
+								<img class="project-img" src="img/portfolio/nutrack-planneradd.png">
+
+
+
+								<img class="project-img" src="img/portfolio/nutrack-tracker.png">
+
+
+
+								<img class="project-img" src="img/portfolio/nutrack-createmeal.png">
+
             	</div>
             	
             </div>
@@ -432,8 +456,8 @@
     </div>
     
     <!-- Project Modal - Let's Play -->
-    <div class="modal fade" id="lets-play-modal" tabindex="-1" role="dialog" aria-labelledby="Merkle Brown" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+    <div class="modal fade" id="lets-play-modal" tabindex="-1" role="dialog" aria-labelledby="Let's Play" aria-hidden="true">
+      <div class="modal-dialog modal-xl project-modal" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Let's Play - Android App</h5>
@@ -441,8 +465,116 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            ...
+          <div class="modal-body container-fixed">
+            <div class="row">
+            	
+            	<div class="col-md-6 project-info text-center">
+								<h3 class="project-header text-center">Let's Play - 100 Card, Dice, Domino, and Dart Games!</h3>
+								
+								<p class="project-text project-tech text-center">
+									<strong>Tech: </strong><br />
+									Android, Java, HTML, CSS
+								</p>
+								
+
+								<p class="project-text tldr">
+									Let's Play is an Android app I created for a freelance client. My client had written a book about different card, dice, domino, and dart games containing rules, how to play, histories of the games, and other information, and he wanted an App to sell along with the book. He gave me the content of the book, formatted in html and css, and asked me to create an Android that displayed the books content organized inside of an easy-to-use UI and also contained a dynamic scoreboard that would work for any combination of game-type, number of players, and number of rounds. 
+								</p>
+								
+								<p class="project-text tldr">
+									The project actually consisted of several apps, mainly the '100 Games' version, but also separate versions for just cards, darts, dominos, or dice games. All of the apps were very similar to each other though and creating the different versions didn't add any new technical challenges to the project. In the section below you'll find links to the main '100 Games' app as well as the '25 Card Games' app on the app store.
+								</p>
+								<p class="project-text tldr">
+									Instead of tediously copying every single page of the books content into Android Activities and layouts, I just created the basic UI flow and menu's and used a modified version of Android's WebView component to load the pages he gave me. The default WebView implementation took a second to load after the screen for that section of the book loaded, so I modified the code to pre-load the content for the pages to be displayed based on the users location in the menu so that when the user clicked on a game, the preloaded WebView could be displayed instantly. The preloading didn't have any noticeable performance side-effects and worked well across all Android devices tested.
+								</p>
+
+								<p class="project-text tldr">
+									The project was completed successfully ahead of time, and I uploaded the App to the <a href="">App Store</a> for my client. He was very happy with the results and left me the following review on Elance.com:
+
+								</p>
+								<div class="quote">
+									<p>Superb work! Very responsive, extensive subject matter knowledge, exacting attention to detail, and results exactly as represented. Would not hesitate to hire again!</p>
+								</div>
+							</div>
+           		
+           		<div class="col-md-6 text-center project-img-col">
+            		<a class="project-img-display w-100" href="/img/lets-play/letsplay.png">
+            			<img class="project-img-main" src="img/lets-play/letsplay.png">
+            		</a>
+            		 
+								<img class="project-img img-active" src="img/lets-play/letsplay.png">
+
+								<img class="project-img" src="img/lets-play/letsplay2.png">
+
+								<img class="project-img" src="img/lets-play/letsplay3.png">
+
+								<img class="project-img" src="img/lets-play/letsplay4.png">
+           		</div>
+						</div>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a href="https://www.amazon.com/LETS-PLAY-100-GAMES-Simple/dp/B00DWCFDJQ" class="btn btn-primary">View on App Store</a>
+            <a href="https://www.amazon.com/LETS-PLAY-100-GAMES-Simple/dp/B00DWCFDJQ" class="btn btn-primary">Let's Play Cards on App Store</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- Project Modal - Libra -->
+    <div class="modal fade" id="libra-modal" tabindex="-1" role="dialog" aria-labelledby="Libra" aria-hidden="true">
+      <div class="modal-dialog modal-xl project-modal" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Libra - Android Game</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body container-fixed">
+            <div class="row">
+            	
+            	<div class="col-md-6 project-info text-center">
+								<h3 class="project-header text-center">Libra - Educational Android Game</h3>
+								
+								<p class="project-text project-tech text-center">
+									<strong>Tech: </strong><br />
+									Android, Java, AndEngine, Box2D, OpenGL
+								</p>
+								
+
+								<p class="project-text tldr">
+									Libra was one of my first real freelance projects. The client was an educator who already had a game app that they designed created by another freelancer. The app that they had was made with OpenGL, but didn't function reliably and was missing some key features they wanted, so they decided to find another developer to remake the game in AndEngine and fix the parts that were lacking in their previous app. AndEngine was a popular 2d Android game engine at the time that worked well with Box2D. 
+								</p>
+
+								<p class="project-text">
+									This game was designed to teach fractions to young students. It consists of a balance scale and a bunch of small weights with a fraction drawn on them to denote how much they weight. At the beginning of a round, one side of the balance would have 1 or more weights on it and the other side would be empty. The player has a selection of different weights at the bottom of the screen and their goal is to drag and drop them on to the empty side of the scale to even out the weight. The game uses Box2D for real-time physics simulation, so the balance will tilt towards whichever side has more weight and even out as the user adds weights to the other side and gets closer to balancing the scale. The realistic physics and smooth feel helped students get an intuitive understanding of how fractions work and how the fractional weights relate to one another, I think the game really would help students comprehension of fractions.
+
+								<p class="project-text">
+									The original version of the app was created with openGL, and didn't have real physics simulation but instead was just programmed to either tilt the scale left or right depending which side had more weight until the user evened out both sides. In addition to providing the inuitive understanding of fractions, adding the physics also made the app function much more smoothly - e.g. instead of draging a weight to one side of the scale or the other and having it 'snap' into position on one of the scale plates, users could now drag it around the drop it and let it fall due to gravity and either land on the scale or fall to the ground, and users had to physically drop the weights on to the scale for it to work. If the user dropped the weight from a high height onto the scale it would make the scale quickly tip in the direction of the dropped weight before oscilating back and forth a few times and then balancing out - just as you'd expect the balance to behave in real life. The realistic feel made the game much more fun to play with in my opinion and probably helped engage students much more than the previous version of the app.
+								</p>
+								
+								
+								<p class="project-text">
+									When I took the job I had almost no Android development experience, but it was a porting job from OpenGL to AndEngine, and I already knew a very small amount of OpenGL and had heard that AndEngine was easy to use and learn, so I decided to write a proposal for the job and hope the client hired me anyway. To my surprise I got hired and only had a couple weeks to complete the project - which in hindsight is a pretty long time for an App like this, but since I had to learn Android development and AndEngine first it was kind of a tight deadline for me. I finished the project with only a couple days to spare, and managed to fix all the bugs and missing features in the OpenGL version of the game(mostly just a bug to do with scoring and a problem with the touch & drag functionality not working sometimes) as well as add the realistic physics in and make the gameplay much smoother, which the client was very happy with. I received a 5-star review on Elance from the client with the following testimonial:
+								</p> 
+									<div class="quote">
+										<p>
+											We are glad to work with him. We are really satisfied with his work and his report.
+										</p>
+									</div>
+							</div>
+           		
+           		<div class="col-md-6 text-center project-img-col">
+            		<a class="project-img-display w-100" href="/img/libra/libra-screen.jpg">
+            			<img class="project-img-main" src="img/libra/libra-screen.jpg">
+            		</a>
+            		 
+           		</div>
+						</div>
+            
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -452,27 +584,80 @@
       </div>
     </div>
     
-    <!-- Project Modal - Let's Play -->
-    <div class="modal fade" id="maurice-nowicki-modal" tabindex="-1" role="dialog" aria-labelledby="Merkle Brown" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+    
+        
+    <!-- Project Modal - Personal Site -->
+    <div class="modal fade" id="mnowicki-modal" tabindex="-1" role="dialog" aria-labelledby="Let's Play" aria-hidden="true">
+      <div class="modal-dialog modal-xl project-modal" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Maurice Nowick - Website</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Maurice Nowick - Portfolio Website</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            ...
+          <div class="modal-body container-fixed">
+            <div class="row">
+            	
+            	<div class="col-md-6 project-info text-center">
+								<h3 class="project-header text-center">Maurice Nowicki - Portfolio Website</h3>
+								
+								<p class="project-text project-tech text-center">
+									<strong>Tech: </strong><br />
+									Javascript - HTML5 - CSS3 - SASS - Bootstrap - JQuery
+								</p>
+								
+
+								<p class="project-text tldr">
+									This is just my personal site, which I suppose you already know about if you are reading this. I thought I'd share a little bit about designing and developing this site and my future plans for it though as it's probably one of my nicest-looking static websites I've created to date.
+								</p>
+								
+								<p class="project-text tldr">
+									I based the design of this site off of one of the Bootstrap examples but heavily modified it for my own needs. I wanted something simple and clean that presented the information I needed to share in a clear way, and I think this was the best and most efficient way to do that. Most of my projects I don't have the luxury of taking a 'shortcut' like that because they are too specific and unique to base off of a general template, but when I can utilize the work of a professional designer to save myself time and to build my design off of(probably resulting in an overall better look than I would've come up with on my own) for free - I think it's worth doing as long as their are no drawbacks(such as lower quality or increased cost). I do love creating things as a developer, and it's fun to use new technologies and experiment, but my main goal here specifically was just to create a quality website and get it online while I work on my <i>next</i> portfolio website project(details in the last paragraph) - and I think this was the most effective and efficient way to acheive that goal. I don't want to waste my time as a developer reinventing the wheel or repeating work that people more skilled/specialized in that area than I am have already done and are giving away for free. That being said, I ended up having/wanting to change so many things that my website barely resembles the template it was based off of anymore anyway, however I do think it still saved a decent amount of time and improved the quality of my final result though.
+								</p>
+								
+								<p class="project-text tldr">
+									Building this site was a good review in Bootstrap, HTML5/CSS3, and JQuery, and also gave me an opportunity to get used to working with a CSS precompiler like SASS a little more(I've used SASS on a couple projects before, but for some reason it took me a little bit to really appreciate it's value). I also always love an opportunity to create interactive UI elements with JQuery, which is soemthing I haven't had a chance to do in a while since I've been focusing more on React and other front end libraries. It was fun and refreshing to create a couple relatively simple JQuery components for this site, such as the image/video viewer in each of my project modals; you can see it in action to the right, although this project only has 2 items and they are both pictures so it's not exactly impressive, if you view my game project - "Merkle Brown" - you'll see a better example of it in action. The javascript for this component was actually extremely simple, but that's what I love about JQuery - once you know how to use it well you can create interesting interactive elements that really add to your site in a few minutes and a few lines of code - in this case I built the image/video viewer functionality with a single function consisting of about 8 lines of coder, and it works seemlessly for both videos(or any other iFrame embedded content) and images. The hard part in creating it was getting the layout and css styles to work inside of a modal, making everything fit wasn't <i>that</i> hard but - as you can see - I still haven't managed to make it look nice yet...
+								</p>
+								
+								<p class="project-text tldr">
+									One of the main reasons I wanted to get this site up and running quickly was so that I could get my site online for now, while I worked on a bigger, long-term project to create its replacement: A portfolio web app/blog that I will be building while at the same time creating a tutorial/course that teaches developers how to build exactly what I'm building as I go. The goal of the course will be to teach users Node, Express, React, Redux, etc by having them follow along and create a real website that they can actually use. By the end, everyone who completes the course will have their own personal portfolio website and blog, both with easy-to-use admin panels where they can easily upload new blog posts or new portfolio projects by uploading images/videos and filling in a form to specify the project name, description, etc. I plan on having a few students follow along with the course as I create it, giving lessons in live-streams and helping them all out along the way, then at the end I can add recordings of the live-stream sessions and answers to any questions asked by students in the tutorial, which should help to make sure any common problems or difficult areas are thoroughly explained by the time the tutorial is put online for everyone to view. Students will be encouranged, and taught how, to customize the project in the tutorial to suite their needs so everyone doesn't end up with the same end-result as eachother(and me!). When I'm done, I will have my newly created portfolio/blog site to post the actual course on where users can view the tutorial on a website that is very similar to what they will actually be creating, which I think is pretty cool.
+								</p>
+
+								<p class="project-text tldr">
+									The project was completed successfully ahead of time, and I uploaded the App to the <a href="">App Store</a> for my client. He was very happy with the results and left me the following review on Elance.com:
+
+								</p>
+								<div class="quote">
+									<p>Superb work! Very responsive, extensive subject matter knowledge, exacting attention to detail, and results exactly as represented. Would not hesitate to hire again!</p>
+								</div>
+							</div>
+           		
+           		<div class="col-md-6 text-center project-img-col">
+            		<a class="project-img-display w-100" href="/img/mnowicki/portfolio-home.jpg">
+            			<img class="project-img-main" src="img/mnowicki/portfolio-home.jpg">
+            		</a>
+            		 
+								<img class="project-img img-active" src="img/mnowicki/portfolio-home.jpg">
+
+								<img class="project-img" src="img/mnowicki/portfolio-projects.jpg">
+								
+								<img class="project-img" src="img/mnowicki/portfolio-portfolio2.jpg">
+
+           		</div>
+						</div>
+            
           </div>
           <div class="modal-footer">
-            <a class="btn btn-secondary" data-dismiss="modal">Close</a>
-            <a class="btn btn-primary" target="_blank">View on Github</a>
-            <a class="btn btn-primary" target="_blank">View Live...?</a>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a href="https://www.amazon.com/LETS-PLAY-100-GAMES-Simple/dp/B00DWCFDJQ" class="btn btn-primary">View on App Store</a>
+            <a href="https://www.amazon.com/LETS-PLAY-100-GAMES-Simple/dp/B00DWCFDJQ" class="btn btn-primary">Let's Play Cards on App Store</a>
           </div>
         </div>
       </div>
     </div>
+    
+    
 
    
     <section class="bg-primary-img" id="about">

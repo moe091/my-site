@@ -6,6 +6,9 @@
 }
 .modal-body {
 	padding: 0 15px; 
+	.row {
+		background-color: #fff;
+	}
 }
 .modal-header {
 	text-align: center;
@@ -41,6 +44,9 @@
 	-moz-box-shadow: inset 0px 0px 6px 5px rgba(0,0,0,0.25);
 	box-shadow: inset 0px 0px 8px 8px rgba(0,0,0,0.25);
 	padding: 8px 24px;
+	
+	max-height: 80vh;
+	overflow-y: auto;
 	 
 }
 
@@ -133,4 +139,33 @@
 	font-size: 12px;
 	font-family: 'Nanum Myeongjo', serif;
 }
+
+
+.quote {
+	display: inline-block;
+	text-align: center;
+	p {
+		display: inline-block;
+		padding-top:1em;
+		width: 80%;
+		font-style: italic;
+		font-size: 12px;
+		line-height: 28px;
+		&:before {
+			content: '"'; 
+			font-size: 26px; 
+		}
+		&:after {
+			content: '"'; 
+			font-size: 26px; 
+		}
+	}
+}
+
+
+
+
+
+
+
 

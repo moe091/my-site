@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+  	TODO:
+  	
+  	plans...
+  		Turn the 'services' section into an interactive demo showing off pieces of different things I can do. e.g clips/screenshots of Merkle Brown, NuTrack, and portfolio page itself(webpage-inception/recursion):
+  		- dark/black background, with a barely lit(gradient from dark-grey to black) floor section at the bottom extending up and to the middle(angled to look like a floor).
+  		- full-screen(100vh)
+  		- Across the top is a row with 3-4 blocks(web apps, static sites, games, get in touch). whichever one is selected slides to the end/right, 'rotating' the whole row(any blocks to the right will rotate off the side and come back on the left). ends of the row have a gradient from transparent-to-black, so that before a block slides off the end it looks like it's fading out as it moves further to the right, or fading in as it moves in from the left. Maybe mess around with squeezing/stretching the width as it goes off one of the ends too(if x > threshold then width = maxWidth * (x - threshhold) * modifier / 100)
+  		- whichever item is current being displayed is shown below the row, taking up most of the screen. There is large text to the left going from top to bottom of screen, with a big picture/gif/video to the right taking up most of the right side of screen. Title is above the text on the left, not above the whole thing.
+  		
+  		
+  		PORTFOLIO...
+  		Also full-screen, but this time white/light colored:
+  		
+  				-!!!!!!!!!!Make it so that the portfolio section looks like a block/box, and the services section is an empty space/cube. The 'floor' part of the services section can be made to look like the top of the 'portfolio' section block.
+  		
+  		- 3x3 large squares for each project. Each square is an image, tinted a different color(red, purple, blue, pink, orange, yellow) with white text over it for the name and maybe some details/description. Hovering over the square gets rid of the tint, and makes the square grow a little bit(without effecting positioning of other blocks. for every px the width/height grows, decrease the margins of the square or the padding of it's container by the same amount)
+  		
+  		- when a square/project is clicked, all the project squares fade out, and then a full-screen div fades in from top to bottom(render the full-screen div and another full-screen white div covering it, the white div has a small gradient to transparent at the top. white div slides down and off the bottom or shrinks to 0 height, giving the appearance of the project-div fading in from top to bottom).
+  		
+  		- project details div(and the project section in general) should be very open and spacey. Is very white(with maybe some slight grey gradient in the middle), with big paddings/margins around all the text and images. Make it feel free and open and calm, instead of congested and cluttered and hectic.
+  		
+  		
+  		
+  		Create an image for skills section, listing all languages/tech in a tree-like structure. Put that in the right col and put a short bio on the left
+  		
+  		
+  		Urgent To-Do's - before anyone looks at my portfolio:
+  		PORTFOLIO:
+  			- Do some algorithm writeups w/ solutions and post as a portfolio item to demonstrate competence/skill in algorithms/data-structures. Start with a Dijkstra or a difficult BFS/DFS, include some simple but tricky "riddle-y" problems, one or two DP problems, and anything else that is interesting or fun
+  		NUTRACK:
+  			- For each page that requires user to be logged in to user, add a "You must be logged in to access this page" warning, and below it give instructions such as "If you are viewing this site from my portfolio, log in(link in top nav bar) with username: nutrack password: nupass. Also create meals and fill up Tracker/Planner on the example account so users can easily view the web apps functionality
+  -->
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Maurice Nowicki | Software Developer</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Rammetto+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container-fluid container-80">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Maurice Nowicki</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+
+    
+    <!-- Project Modal - Merkle Brown -->
+    <div class="modal fade" id="merkle-brown-modal" tabindex="-1" role="dialog" aria-labelledby="Merkle Brown" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Merkle Brown - Javascript HTML5 Game -and- Custom HTML5 Physics-Platformer Level-Editor</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body container-fixed">
+            <div class="row">
+            	
+            	<div class="col-md-7 project-info text-center">
+            		<h3 class="project-header text-center">Merkle Brown (Game + Custom Level Editor)</h3>
+            		
+								<p class="project-text project-tech text-center">
+									<strong>Tech: </strong><br />
+									Javascript - Phaser - Canvas - WebGL - GLSL - JQuery
+								</p>
+           		
+           		
+            		<p class="project-text tldr">Merkle Brown includes both a game and an integrated level-editor. I'm extremely proud of the game itself, and by the time it's all done and polished, with awesome graphics and a complete set of well-designed levels, I think it will be a genuinely fun and unique game with a decent shot at modest commercial success. Although I'm most proud of the game, the level editor I've created is honestly the real 'technical' acheivement of this project; it allows me to design and test levels within the editor, and is capable of implementing a huge range of features and physical objects that can be combined to do almost anything. Merkle Brown has been on the backburner while I worked on NuTrack, but I'm getting ready to dive back in and am very excited. I've learned a lot in the meantime and the first thing I will do is refactor and clean up the code. I have a few more big features and a bunch of little ones left to implement, although the vast majority of the engine and editor are completed. Once I'm done finishing off the last of the features, all that will be left to do before releasing the demo is to create a full set of high-quality graphics and some well-designed and interesting levels(both of which may sound easy enough, but I know it will be a TON of work).</p>
+            		
+								<p class="project-text tldr">I'm already starting to build up a following for the game on twitter, come <a href="https://twitter.com/indiegamemo">follow me</a> for updates or a chance to play the demo when it's ready!</p>
+            		
+            		<h5 class="project-subheader text-left">Overview</h5>
+            		<p class="project-text">Merkle Brown is my current 'secondary' side-project, that I work on when I need a break from my main project. I plan on releasing it on several platforms as a commercial indie game when it's complete, using different wrappers to deploy it on Steam/Windows, Android, iOS, and of course I'll release it as a browser-based html5 game as well - it will even run in mobile web browsers without any downloads or plugins</p>
+            		
+                    <h5 class="project-subheader text-left">Features</h5>
+            		<p class="project-text">Merkle Brown is a 2D, physics-based platformer game with realtime physics simulation, custom hardware-accelerated shaders for lighting and other effects, tons of complicated dynamic and scripted game objects, and an extremely capable(albeit ugly) level editor that allows you to build dynamic obstacles by combining different bodies, triggers, effects, actions, movepaths, joints, springs, and more, allowing endless possibilities for different creative and fun game objects. It's also possible playtest levels as you create them inside the editor, allowing for quick iteration and testing - which is crucial when designing non-tile based levels for a platformer game and you need to position things just right in order to perfect the difficulty curve.</p>
+                  
+                  
+                    <h5 class="project-subheader text-left">Progress</h5>
+                    <p class="project-text">Although the engine itself is mostly complete and editor and other game code is pretty far along, none of the levels or graphics I have created at this point will end up in the final game. I've written all the tools I need to create an awesome and fun game, and now I just need to put it all together into a cohesive whole using quality assets and exceptional level & graphic design. My art skills were HORRIBLE when I started this project, and although they've come a very long way, I don't think I'm capable of doing the game justice with my art yet. I'm much better with level design, and have made some truly interesting and enjoyable levels already while building and testing the different features of my engine and editor, but I really want to focus on getting the level design absolutely perfect as I feel that is the single most crucial factor in making a quality platformer game, and I'm not quite there yet. I plan on continuing to do what I've done this far, which is to keep iterating on the graphics and level design as a add features and improve my engine and editor, pushing myself to learn more and improve a lot on each iteration, until I finally feel like I'm capable of creating a truly top-quality game that stands out in every category. I've come such a long way from when I first started, and this project has truly been an emotional journey, but I know if I keep improving as I have been and stay true to my vision I will end up with an amazing game that I can be extremely proud of</p>
+                  
+                  
+            		
+            		
+            	</div>
+            	
+            	<div class="col-md-5 text-center project-img-col">
+            	
+            			
+            		<a class="project-img-display w-100" href="/img/merkle-brown/japan1-screen.png">
+           				<div class="project-iframe-wrapper">
+           					<img src="img/merkle-brown/japan1-screen.png">
+            				<iframe class="project-iframe" src="https://www.youtube.com/embed/rKEsksspLBQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            			</div>
+            		</a>
+            		 
+            		 <h3><strong>Click an image to play a video!</strong></h3>
+            			<img class="project-img img-active" src="img/merkle-brown/japan1-screen.png" data-video="https://www.youtube.com/embed/rKEsksspLBQ">
+            		
+            		
+            			<img class="project-img" src="img/merkle-brown/street1-screen.png" data-video="https://www.youtube.com/embed/MJJ9EZHHatw">
+								
+          			
+          			
+            			<img class="project-img" src="img/merkle-brown/sawblade-screen.jpg" data-video="https://www.youtube.com/embed/gADP_lnLqno">
+           			
+           			
+           			
+            			<img class="project-img" src="img/merkle-brown/early-level-screen.jpg" data-video="https://www.youtube.com/embed/ulA4mcWpcyk">
+								
+            	</div>
+            	
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-secondary" data-dismiss="modal">Close</a>
+            <a class="btn btn-primary" target="_blank" href="https://twitter.com/indiegamemo">Merkle Brown Twitter!</a>
+            <a class="btn btn-primary" target="_blank" href="https://github.com/moe091/Ball">View on Github</a> 
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+
+    
+
+    
+    
+
+    
+    
+   
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/creative.js"></script>
+
+  </body>
+
+</html>

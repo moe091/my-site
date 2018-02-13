@@ -53,6 +53,7 @@
 .project-video-link-wrapper {
 	margin: 0;
 	padding: 0;
+	height: 400px;
 	position: relative;
 	display: inline-block;
 }
@@ -69,12 +70,12 @@
 }
 .project-img-display {
 	padding: 4px 0;
-	display: inline-block;
-	border: 4px #000 solid;
+	display: inline-block; 
 	background-color: #242424;
 }
 .project-img {
-	width: 46%;  
+	max-width:22%;
+	height:120px;
 	margin: 4px 2px;
 	box-sizing: border-box;
 	cursor: pointer;
@@ -82,52 +83,74 @@
 
 
 .img-active {
-	margin-top: -2px;
-	margin-bottom: -2px;
+	margin: 4px 2px;
 	padding: 1px;
 	border: 1px $secondary solid !important;
 }
 
 .project-img-main {
 	width: 100%; 
-	margin-bottom: 26px;
+	margin-bottom: 26px; 
+}
+.video-row {
+	justify-content: center;
+	margin-bottom: 32px;
+	padding: 8px;
+	background-color: #444 !important;
+}
+.video-row .project-iframe-wrapper img {
+	display: none;
 }
 .project-iframe-wrapper { 
 	position: relative;
+	text-align: center;
 	img {
 		width: 100%;
 		height: auto;
-		visibility: hidden;
+		visibility: hidden; 
 	}
 }
 .project-iframe {
-	position: absolute;
-	width: 96%;
-	height: 96%;
-	top: 2%;
-	left: 2%;
-	right: 2%;
-	bottom: 2%;
+	display: inline-block;
+	margin: 0 auto;
+	max-width: 90%;
+	width: 800px;
+	height: 540px;
 }
 
+
+
+.proj-content-row {
+	justify-content: center;
+	text-align: center;
+	padding: 12px 24px;
+}
 
 .project-info {
 	padding-top: 10px;
 	padding-bottom: 10px; 
 	max-height: 80vh;
 	overflow-y: auto;
+	text-align: center;
 }
 .project-header {
 	font-weight: bold;
-	font-family: 'Rammetto One', cursive;
+	font-family: 'Nanum Myeongjo', serif;
+	display: block;
+	width: 100%;
 }
 .tldr {
 	font-size: 13px !important; 
+	text-align: center;
 }
 
 .project-subheader {
 	font-weight: bold;
   font-family: 'Merriweather';
+	width: 100%;
+	display: block;
+	text-align: center !important;
+	margin-top: 24px;
 }
 
 .project-tech {
@@ -138,6 +161,7 @@
 	text-align: left;
 	font-size: 12px;
 	font-family: 'Nanum Myeongjo', serif;
+	display: inline-block;
 }
 
 
@@ -163,6 +187,16 @@
 }
 
 
+
+@media (max-width: 991px) {
+	.project-iframe {
+		display: inline-block;
+		margin: 0 auto;
+		max-width: 90%;
+		width: 400px;
+		height: 270px;
+	}
+}
 
 
 

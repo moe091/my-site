@@ -66,6 +66,7 @@
 		if ($(e.target).data("video") == null) { 
 			//Set main-img src to the src of the clicked img
 			$(e.target).parent().children('.project-img-display').children('.project-img-main').attr('src', $(e.target).attr('src'));
+			$(e.target).parent().children('.project-img-display').children('.project-img-main').css('display', 'inline-block');
 
 			//Set the href of the link in the main-img to the src of clicked img
 			$(e.target).parent().children('.project-img-display').attr('href', $(e.target).attr('src'));

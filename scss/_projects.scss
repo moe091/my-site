@@ -15,10 +15,7 @@
 	overflow: hidden;
 	min-height: 5em;
 	align-items: center;
-	flex-wrap: wrap;
-	h5 {
-		display: inline-block;
-	}
+	flex-wrap: wrap; 
 }
 .modal-header, .modal-footer {
 	background-color: #fff;
@@ -35,6 +32,19 @@
 	}
 }
 
+//todo-responsive: add breakpoint where <p> width and image-row width gets set to 100%
+.project-container {
+    color: $primary-dark;
+    background-color: $bg;
+  row {
+    margin: 0;
+    text-align: center;
+  }
+  p {
+    width: 80%;
+  }
+  
+}
 
 .project-img-col {
 	position: relative;
@@ -74,31 +84,30 @@
 	background-color: #242424;
 }
 .project-img {
-	max-width:22%;
-	height:120px;
-	margin: 4px 2px;
+	max-width: 21%;
+	height: 120px;
+	margin: 4px 0 4px 2%;
 	box-sizing: border-box;
 	cursor: pointer;
 }
 
 
-.img-active {
-	margin: 4px 2px;
+.img-active { 
 	padding: 1px;
 	border: 1px $secondary solid !important;
 }
 
 .project-img-main {
-	width: 100%; 
-	margin-bottom: 26px; 
+	max-width: 60%; 
+	margin-top: 32px; 
 }
-.video-row {
+.media-row {
 	justify-content: center;
+    text-align: center;
 	margin-bottom: 32px;
-	padding: 8px;
 	background-color: #444 !important;
 }
-.video-row .project-iframe-wrapper img {
+.media-row .project-iframe-wrapper img {
 	display: none;
 }
 .project-iframe-wrapper { 
@@ -124,6 +133,8 @@
 	justify-content: center;
 	text-align: center;
 	padding: 12px 24px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .project-info {
@@ -146,11 +157,12 @@
 
 .project-subheader {
 	font-weight: bold;
-  font-family: 'Merriweather';
+    font-family: 'Merriweather';
 	width: 100%;
-	display: block;
-	text-align: center !important;
+	display: block; 
 	margin-top: 24px;
+    width: 80%;
+    text-align: left;
 }
 
 .project-tech {
@@ -189,6 +201,7 @@
 
 
 @media (max-width: 991px) {
+  .row
 	.project-iframe {
 		display: inline-block;
 		margin: 0 auto;
@@ -196,6 +209,24 @@
 		width: 400px;
 		height: 270px;
 	}
+  
+  .project-img-main {
+    max-width: 100%;
+  } 
+  
+  .project-container {
+    padding-top: 22px;
+    p {
+      width: 100%;
+    }
+  }
+}
+
+
+@media (max-width: 650px) {
+  .project-img {
+    height: 80px;
+  }
 }
 
 

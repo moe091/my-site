@@ -73,52 +73,42 @@
 
     
     <div class="project-container container-fixed">
-
       <div class="row media-row">
-        <a class="project-img-display w-100" href="/img/merkle-brown/japan1-screen.png">
-          <div class="project-iframe-wrapper">
-            <img src="img/merkle-brown/japan1-screen.png">
-            <iframe class="project-iframe" src="https://www.youtube.com/embed/rKEsksspLBQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+        <a class="project-img-display w-100" href="/img/lets-play/letsplay.png">
+            <img class="project-img-main" src="img/lets-play/letsplay.png">
         </a>
-        <img class="project-img img-active" src="img/merkle-brown/japan1-screen.png" data-video="https://www.youtube.com/embed/rKEsksspLBQ">
-        <img class="project-img" src="img/merkle-brown/street1-screen.png" data-video="https://www.youtube.com/embed/MJJ9EZHHatw">
-        <img class="project-img" src="img/merkle-brown/sawblade-screen.jpg" data-video="https://www.youtube.com/embed/gADP_lnLqno">
-        <img class="project-img" src="img/merkle-brown/early-level-screen.jpg" data-video="https://www.youtube.com/embed/ulA4mcWpcyk">
+        <img class="project-img img-active" src="img/lets-play/letsplay.png">
+        <img class="project-img" src="img/lets-play/letsplay2.png">
+        <img class="project-img" src="img/lets-play/letsplay3.png">
+        <img class="project-img" src="img/lets-play/letsplay4.png">
       </div>
-
       
       <div class="row proj-content-row">
-        <h1 class="project-header text-center">Merkle Brown (Game + Custom Level Editor)</h1>
+        <h3 class="project-header text-center">Let's Play - 100 Card, Dice, Domino, and Dart Games!</h3>
         <p class="project-text project-tech text-center">
             <strong>Tech: </strong><br />
-            Javascript - Phaser - Canvas - WebGL - GLSL - JQuery
+            Android, Java, HTML, CSS
+        </p>
+
+        <p class="project-text tldr">
+            Let's Play is an Android app I created for a freelance client. My client had written a book about different card, dice, domino, and dart games containing rules, how to play, histories of the games, and other information, and he wanted an App to sell along with the book. He gave me the content of the book, formatted in html and css, and asked me to create an Android that displayed the books content organized inside of an easy-to-use UI and also contained a dynamic scoreboard that would work for any combination of game-type, number of players, and number of rounds. 
         </p>
         <p class="project-text tldr">
-          Merkle Brown includes both a game and an integrated level-editor. I'm extremely proud of the game itself, and by the time it's all done and polished, with awesome graphics and a complete set of well-designed levels, I think it will be a genuinely fun and unique game with a decent shot at modest commercial success. Although I'm most proud of the game, the level editor I've created is honestly the real 'technical' acheivement of this project; it allows me to design and test levels within the editor, and is capable of implementing a huge range of features and physical objects that can be combined to do almost anything. Merkle Brown has been on the backburner while I worked on NuTrack, but I'm getting ready to dive back in and am very excited. I've learned a lot in the meantime and the first thing I will do is refactor and clean up the code. I have a few more big features and a bunch of little ones left to implement, although the vast majority of the engine and editor are completed. Once I'm done finishing off the last of the features, all that will be left to do before releasing the demo is to create a full set of high-quality graphics and some well-designed and interesting levels(both of which may sound easy enough, but I know it will be a TON of work).
+            The project actually consisted of several apps, mainly the '100 Games' version, but also separate versions for just cards, darts, dominos, or dice games. All of the apps were very similar to each other though and creating the different versions didn't add any new technical challenges to the project. In the section below you'll find links to the main '100 Games' app as well as the '25 Card Games' app on the app store.
         </p>
         <p class="project-text tldr">
-          I'm already starting to build up a following for the game on twitter, come <a href="https://twitter.com/indiegamemo">follow me</a> for updates or a chance to play the demo when it's ready!
+            Instead of tediously copying every single page of the books content into Android Activities and layouts, I just created the basic UI flow and menu's and used a modified version of Android's WebView component to load the pages he gave me. The default WebView implementation took a second to load after the screen for that section of the book loaded, so I modified the code to pre-load the content for the pages to be displayed based on the users location in the menu so that when the user clicked on a game, the preloaded WebView could be displayed instantly. The preloading didn't have any noticeable performance side-effects and worked well across all Android devices tested.
         </p>
+        <p class="project-text tldr">
+            The project was completed successfully ahead of time, and I uploaded the App to the <a href="">App Store</a> for my client. He was very happy with the results and left me the following review on Elance.com:
 
-        <h5 class="project-subheader text-left">Overview</h5>
-        <p class="project-text">
-          Merkle Brown is my current 'secondary' side-project, that I work on when I need a break from my main project. I plan on releasing it on several platforms as a commercial indie game when it's complete, using different wrappers to deploy it on Steam/Windows, Android, iOS, and of course I'll release it as a browser-based html5 game as well - it will even run in mobile web browsers without any downloads or plugins
         </p>
-
-        <h5 class="project-subheader text-left">Features</h5>
-        <p class="project-text">
-          Merkle Brown is a 2D, physics-based platformer game with realtime physics simulation, custom hardware-accelerated shaders for lighting and other effects, tons of complicated dynamic and scripted game objects, and an extremely capable(albeit ugly) level editor that allows you to build dynamic obstacles by combining different bodies, triggers, effects, actions, movepaths, joints, springs, and more, allowing endless possibilities for different creative and fun game objects. It's also possible playtest levels as you create them inside the editor, allowing for quick iteration and testing - which is crucial when designing non-tile based levels for a platformer game and you need to position things just right in order to perfect the difficulty curve.
-        </p>
-
-
-        <h5 class="project-subheader text-left">Progress</h5>
-        <p class="project-text">
-          Although the engine itself is mostly complete and editor and other game code is pretty far along, none of the levels or graphics I have created at this point will end up in the final game. I've written all the tools I need to create an awesome and fun game, and now I just need to put it all together into a cohesive whole using quality assets and exceptional level & graphic design. My art skills were HORRIBLE when I started this project, and although they've come a very long way, I don't think I'm capable of doing the game justice with my art yet. I'm much better with level design, and have made some truly interesting and enjoyable levels already while building and testing the different features of my engine and editor, but I really want to focus on getting the level design absolutely perfect as I feel that is the single most crucial factor in making a quality platformer game, and I'm not quite there yet. I plan on continuing to do what I've done this far, which is to keep iterating on the graphics and level design as a add features and improve my engine and editor, pushing myself to learn more and improve a lot on each iteration, until I finally feel like I'm capable of creating a truly top-quality game that stands out in every category. I've come such a long way from when I first started, and this project has truly been an emotional journey, but I know if I keep improving as I have been and stay true to my vision I will end up with an amazing game that I can be extremely proud of
-        </p>
-      </div>
-      
-    </div>
+        <div class="quote">
+            <p>Superb work! Very responsive, extensive subject matter knowledge, exacting attention to detail, and results exactly as represented. Would not hesitate to hire again!</p>
+        </div>
+      </div><!-- description row -->
+    </div><!-- container -->
+    
     
     
     <script src="vendor/jquery/jquery.min.js"></script>

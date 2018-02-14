@@ -60,7 +60,8 @@
 
 	//Simple custom handler for the image-display section of my project modals. Works automatically for each modal without having to individually set which images belong to which modal and whatnot
 	$('.project-img').click(function(e) {
-		console.log($(e.target).attr('src')); 
+      console.log("CLICK");
+      console.log($(e.target).attr('src')); 
 		
 		//check if element has a 'video' data-attribute, if not then set the src of the .project-img-main img in this modal to the source of the image clicked
 		if ($(e.target).data("video") == null) { 
@@ -92,6 +93,7 @@
 			$(e.target).addClass('img-active');
 		}
 	});
+  console.log(".project-img");
   
 
 })(jQuery); // End of use strict

@@ -73,52 +73,39 @@
 
     
     <div class="project-container container-fixed">
-
       <div class="row media-row">
-        <a class="project-img-display w-100" href="/img/merkle-brown/japan1-screen.png">
-          <div class="project-iframe-wrapper">
-            <img src="img/merkle-brown/japan1-screen.png">
-            <iframe class="project-iframe" src="https://www.youtube.com/embed/rKEsksspLBQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+        <a class="project-img-display w-100" href="/img/libra/libra-screen.jpg">
+          <img class="project-img-main" src="img/libra/libra-screen.jpg">
         </a>
-        <img class="project-img img-active" src="img/merkle-brown/japan1-screen.png" data-video="https://www.youtube.com/embed/rKEsksspLBQ">
-        <img class="project-img" src="img/merkle-brown/street1-screen.png" data-video="https://www.youtube.com/embed/MJJ9EZHHatw">
-        <img class="project-img" src="img/merkle-brown/sawblade-screen.jpg" data-video="https://www.youtube.com/embed/gADP_lnLqno">
-        <img class="project-img" src="img/merkle-brown/early-level-screen.jpg" data-video="https://www.youtube.com/embed/ulA4mcWpcyk">
       </div>
-
       
       <div class="row proj-content-row">
-        <h1 class="project-header text-center">Merkle Brown (Game + Custom Level Editor)</h1>
+        <h3 class="project-header text-center">Libra - Educational Android Game</h3>
         <p class="project-text project-tech text-center">
             <strong>Tech: </strong><br />
-            Javascript - Phaser - Canvas - WebGL - GLSL - JQuery
+            Android, Java, AndEngine, Box2D, OpenGL
         </p>
+
         <p class="project-text tldr">
-          Merkle Brown includes both a game and an integrated level-editor. I'm extremely proud of the game itself, and by the time it's all done and polished, with awesome graphics and a complete set of well-designed levels, I think it will be a genuinely fun and unique game with a decent shot at modest commercial success. Although I'm most proud of the game, the level editor I've created is honestly the real 'technical' acheivement of this project; it allows me to design and test levels within the editor, and is capable of implementing a huge range of features and physical objects that can be combined to do almost anything. Merkle Brown has been on the backburner while I worked on NuTrack, but I'm getting ready to dive back in and am very excited. I've learned a lot in the meantime and the first thing I will do is refactor and clean up the code. I have a few more big features and a bunch of little ones left to implement, although the vast majority of the engine and editor are completed. Once I'm done finishing off the last of the features, all that will be left to do before releasing the demo is to create a full set of high-quality graphics and some well-designed and interesting levels(both of which may sound easy enough, but I know it will be a TON of work).
+            Libra was one of my first real freelance projects. The client was an educator who already had a game app that they designed created by another freelancer. The app that they had was made with OpenGL, but didn't function reliably and was missing some key features they wanted, so they decided to find another developer to remake the game in AndEngine and fix the parts that were lacking in their previous app. AndEngine was a popular 2d Android game engine at the time that worked well with Box2D. 
         </p>
-        <p class="project-text tldr">
-          I'm already starting to build up a following for the game on twitter, come <a href="https://twitter.com/indiegamemo">follow me</a> for updates or a chance to play the demo when it's ready!
-        </p>
-
-        <h5 class="project-subheader text-left">Overview</h5>
         <p class="project-text">
-          Merkle Brown is my current 'secondary' side-project, that I work on when I need a break from my main project. I plan on releasing it on several platforms as a commercial indie game when it's complete, using different wrappers to deploy it on Steam/Windows, Android, iOS, and of course I'll release it as a browser-based html5 game as well - it will even run in mobile web browsers without any downloads or plugins
+            This game was designed to teach fractions to young students. It consists of a balance scale and a bunch of small weights with a fraction drawn on them to denote how much they weight. At the beginning of a round, one side of the balance would have 1 or more weights on it and the other side would be empty. The player has a selection of different weights at the bottom of the screen and their goal is to drag and drop them on to the empty side of the scale to even out the weight. The game uses Box2D for real-time physics simulation, so the balance will tilt towards whichever side has more weight and even out as the user adds weights to the other side and gets closer to balancing the scale. The realistic physics and smooth feel helped students get an intuitive understanding of how fractions work and how the fractional weights relate to one another, I think the game really would help students comprehension of fractions.
         </p>
-
-        <h5 class="project-subheader text-left">Features</h5>
         <p class="project-text">
-          Merkle Brown is a 2D, physics-based platformer game with realtime physics simulation, custom hardware-accelerated shaders for lighting and other effects, tons of complicated dynamic and scripted game objects, and an extremely capable(albeit ugly) level editor that allows you to build dynamic obstacles by combining different bodies, triggers, effects, actions, movepaths, joints, springs, and more, allowing endless possibilities for different creative and fun game objects. It's also possible playtest levels as you create them inside the editor, allowing for quick iteration and testing - which is crucial when designing non-tile based levels for a platformer game and you need to position things just right in order to perfect the difficulty curve.
+            The original version of the app was created with openGL, and didn't have real physics simulation but instead was just programmed to either tilt the scale left or right depending which side had more weight until the user evened out both sides. In addition to providing the inuitive understanding of fractions, adding the physics also made the app function much more smoothly - e.g. instead of draging a weight to one side of the scale or the other and having it 'snap' into position on one of the scale plates, users could now drag it around the drop it and let it fall due to gravity and either land on the scale or fall to the ground, and users had to physically drop the weights on to the scale for it to work. If the user dropped the weight from a high height onto the scale it would make the scale quickly tip in the direction of the dropped weight before oscilating back and forth a few times and then balancing out - just as you'd expect the balance to behave in real life. The realistic feel made the game much more fun to play with in my opinion and probably helped engage students much more than the previous version of the app.
         </p>
-
-
-        <h5 class="project-subheader text-left">Progress</h5>
         <p class="project-text">
-          Although the engine itself is mostly complete and editor and other game code is pretty far along, none of the levels or graphics I have created at this point will end up in the final game. I've written all the tools I need to create an awesome and fun game, and now I just need to put it all together into a cohesive whole using quality assets and exceptional level & graphic design. My art skills were HORRIBLE when I started this project, and although they've come a very long way, I don't think I'm capable of doing the game justice with my art yet. I'm much better with level design, and have made some truly interesting and enjoyable levels already while building and testing the different features of my engine and editor, but I really want to focus on getting the level design absolutely perfect as I feel that is the single most crucial factor in making a quality platformer game, and I'm not quite there yet. I plan on continuing to do what I've done this far, which is to keep iterating on the graphics and level design as a add features and improve my engine and editor, pushing myself to learn more and improve a lot on each iteration, until I finally feel like I'm capable of creating a truly top-quality game that stands out in every category. I've come such a long way from when I first started, and this project has truly been an emotional journey, but I know if I keep improving as I have been and stay true to my vision I will end up with an amazing game that I can be extremely proud of
-        </p>
-      </div>
-      
-    </div>
+            When I took the job I had almost no Android development experience, but it was a porting job from OpenGL to AndEngine, and I already knew a very small amount of OpenGL and had heard that AndEngine was easy to use and learn, so I decided to write a proposal for the job and hope the client hired me anyway. To my surprise I got hired and only had a couple weeks to complete the project - which in hindsight is a pretty long time for an App like this, but since I had to learn Android development and AndEngine first it was kind of a tight deadline for me. I finished the project with only a couple days to spare, and managed to fix all the bugs and missing features in the OpenGL version of the game(mostly just a bug to do with scoring and a problem with the touch & drag functionality not working sometimes) as well as add the realistic physics in and make the gameplay much smoother, which the client was very happy with. I received a 5-star review on Elance from the client with the following testimonial:
+        </p> 
+        <div class="quote">
+            <p>
+                We are glad to work with him. We are really satisfied with his work and his report.
+            </p>
+        </div>
+      </div><!-- description row -->
+    </div><!-- container -->
+    
     
     
     <script src="vendor/jquery/jquery.min.js"></script>

@@ -347,8 +347,6 @@ header.masthead {
   min-height: 5em;
   align-items: center;
   flex-wrap: wrap; }
-  .modal-header h5 {
-    display: inline-block; }
 
 .modal-header, .modal-footer {
   background-color: #fff;
@@ -360,6 +358,15 @@ header.masthead {
   align-items: center; }
   .modal-footer a {
     color: #fff !important; }
+
+.project-container {
+  color: #CA482A;
+  background-color: #f8f9fb; }
+  .project-container row {
+    margin: 0;
+    text-align: center; }
+  .project-container p {
+    width: 80%; }
 
 .project-img-col {
   position: relative;
@@ -395,28 +402,27 @@ header.masthead {
   background-color: #242424; }
 
 .project-img {
-  max-width: 22%;
+  max-width: 21%;
   height: 120px;
-  margin: 4px 2px;
+  margin: 4px 0 4px 2%;
   box-sizing: border-box;
   cursor: pointer; }
 
 .img-active {
-  margin: 4px 2px;
   padding: 1px;
   border: 1px #FE8563 solid !important; }
 
 .project-img-main {
-  width: 100%;
-  margin-bottom: 26px; }
+  max-width: 60%;
+  margin-top: 32px; }
 
-.video-row {
+.media-row {
   justify-content: center;
+  text-align: center;
   margin-bottom: 32px;
-  padding: 8px;
   background-color: #444 !important; }
 
-.video-row .project-iframe-wrapper img {
+.media-row .project-iframe-wrapper img {
   display: none; }
 
 .project-iframe-wrapper {
@@ -437,7 +443,9 @@ header.masthead {
 .proj-content-row {
   justify-content: center;
   text-align: center;
-  padding: 12px 24px; }
+  padding: 12px 24px;
+  width: 80%;
+  margin: 0 auto; }
 
 .project-info {
   padding-top: 10px;
@@ -461,8 +469,9 @@ header.masthead {
   font-family: 'Merriweather';
   width: 100%;
   display: block;
-  text-align: center !important;
-  margin-top: 24px; }
+  margin-top: 24px;
+  width: 80%;
+  text-align: left; }
 
 .project-tech {
   font-style: italic; }
@@ -491,12 +500,24 @@ header.masthead {
       font-size: 26px; }
 
 @media (max-width: 991px) {
-  .project-iframe {
+  .row
+.project-iframe {
     display: inline-block;
     margin: 0 auto;
     max-width: 90%;
     width: 400px;
-    height: 270px; } }
+    height: 270px; }
+  .project-img-main {
+    max-width: 100%; }
+  .project-container {
+    padding-top: 22px; }
+    .project-container p {
+      width: 100%; } }
+
+@media (max-width: 650px) {
+  .project-img {
+    height: 80px; } }
+
 .text-primary {
   color: #F05F40 !important; }
 
@@ -540,4 +561,5 @@ header.masthead {
     width: 72%;
     max-width: 1600px; } }
 
-/*# sourceMappingURL=creative.css.map */
+.row {
+  max-width: 100%; }

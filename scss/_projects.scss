@@ -201,7 +201,8 @@
 
 
 @media (max-width: 991px) {
-  .row
+  .row {
+    
 	.project-iframe {
 		display: inline-block;
 		margin: 0 auto;
@@ -209,7 +210,7 @@
 		width: 400px;
 		height: 270px;
 	}
-  
+  }
   .project-img-main {
     max-width: 100%;
   } 

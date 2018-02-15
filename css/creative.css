@@ -500,8 +500,7 @@ header.masthead {
       font-size: 26px; }
 
 @media (max-width: 991px) {
-  .row
-.project-iframe {
+  .row .project-iframe {
     display: inline-block;
     margin: 0 auto;
     max-width: 90%;
@@ -562,4 +561,5 @@ header.masthead {
     max-width: 1600px; } }
 
 .row {
-  max-width: 100%; }
+  max-width: 100%;
+  margin: 0 auto; }
